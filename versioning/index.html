@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Versioning — Rahvusarhiiv Design System</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/prism-themes/themes/prism-a11y-dark.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body class="bg-gray-light-300">
+    <header class="m-2 bg-theme-ais rounded shadow">
+  <div class="flex py-5 px-8 w-full items-center">
+
+    <img src="/assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
+
+    <p class="border-l ml-4 pl-4 font-medium">
+      Design System
+      </p>
+
+    <div class="ml-auto space-x-3">
+      <a href="#" class="font-bold underline">GitHub</a>
+      <a href="#" class="font-bold underline">Figma (UI Design Kit)</a>
+    </div>
+  </div>
+
+</header>
+
+    <div class="grid md:grid-cols-12 gap-2 m-2">
+      <aside class="md:col-span-3 p-4 bg-white rounded shadow">
+  <nav class="divide-y-2 divide-gray-light-900 sticky top-4">
+
+    <section class="pb-3">
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/changelog/">Changelog</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/">Getting Started</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light  bg-action-light " href="/versioning/">Versioning</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Design & Content</h3>
+
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/content/">Content (ET)</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/ui-design-kit/">UI Design Kit</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Styles</h3>
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/default/">Default Utilites</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/border-radius/">Border Radius</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/colors/">Colors</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/icons/">Icons</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/shadows/">Shadows</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/spacing/">Spacing</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/themes/">Themes</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/typography/">Typography</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Components & Patterns</h3>
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/components/status/">Components List</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/components/simple-table/">Simple Table</a>
+          </li>
+      </ul>
+    </section>
+
+  </nav>
+</aside>
+      <main class="md:col-span-9 p-6 bg-white rounded shadow">
+
+        
+          <article class="prose prose-lg max-w-5xl">
+            <h1>Updating the system and keeping different parts in sync</h1>
+<p>Rahvusarhiiv Design System uses <a href="https://semver.org/">Semantic Versioning 2.0.0</a> for versioning the design system different parts.</p>
+<p>Given a version number <code>MAJOR.MINOR.PATCH</code>, increment the:</p>
+<ul>
+<li><code>MAJOR</code> version when you make incompatible API changes</li>
+<li><code>MINOR</code> version when you add functionality in a backwards compatible manner</li>
+<li><code>PATCH</code> version when you make backwards compatible bug fixes</li>
+<li>Additional labels for pre-release and build metadata are available as extensions to the MAJOR.MINOR.PATCH format.</li>
+</ul>
+<hr>
+<h2>The parts that adhere to the versioning logic</h2>
+<ul>
+<li><strong>Components and patterns</strong> in the design system <strong>code examples library</strong> and <strong>UI Design Kit</strong> — this is for keeping in sync the Figma file and code examples. The version is marked on the documentation site and Figma file.</li>
+<li>The <strong>full custom Tailwind CSS configuration file</strong> <code>tailwindcss.conf.js</code> and <strong>Figma styles in UI Design Kit</strong> — this is for developers and designer to understand which version of the configuration/styles is in use. Also, the UI Design Kit and the configuration file versions and features should be matched. If there is change in the Figma file styles the configuration need to change and match the version or vice versa. Version is marked in the beginning of the configuration file and in Figma.</li>
+</ul>
+
+          </article>
+        
+
+      </main>
+    </div>
+  </body>
+</html>

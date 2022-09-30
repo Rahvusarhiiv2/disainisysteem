@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Typography — Rahvusarhiiv Design System</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/prism-themes/themes/prism-a11y-dark.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body class="bg-gray-light-300">
+    <header class="m-2 bg-theme-ais rounded shadow">
+  <div class="flex py-5 px-8 w-full items-center">
+
+    <img src="/assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
+
+    <p class="border-l ml-4 pl-4 font-medium">
+      Design System
+      </p>
+
+    <div class="ml-auto space-x-3">
+      <a href="#" class="font-bold underline">GitHub</a>
+      <a href="#" class="font-bold underline">Figma (UI Design Kit)</a>
+    </div>
+  </div>
+
+</header>
+
+    <div class="grid md:grid-cols-12 gap-2 m-2">
+      <aside class="md:col-span-3 p-4 bg-white rounded shadow">
+  <nav class="divide-y-2 divide-gray-light-900 sticky top-4">
+
+    <section class="pb-3">
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/changelog/">Changelog</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/">Getting Started</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/versioning/">Versioning</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Design & Content</h3>
+
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/content/">Content (ET)</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/ui-design-kit/">UI Design Kit</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Styles</h3>
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/default/">Default Utilites</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/border-radius/">Border Radius</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/colors/">Colors</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/icons/">Icons</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/shadows/">Shadows</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/spacing/">Spacing</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/themes/">Themes</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light  bg-action-light " href="/typography/">Typography</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Components & Patterns</h3>
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/components/status/">Components List</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/components/simple-table/">Simple Table</a>
+          </li>
+      </ul>
+    </section>
+
+  </nav>
+</aside>
+      <main class="md:col-span-9 p-6 bg-white rounded shadow">
+
+        
+          <article class="prose prose-lg max-w-5xl">
+            <h1>Typography</h1>
+<h2>Font families</h2>
+<div class="space-y-8 mb-20">
+  <div class="flex w-full flex-col space-y-2">
+    <code class="text-sm text-gray-dark-50">font-body</code>
+    <p class="text-xl font-body">Roboto — The quick brown fox ...</p>
+  </div>
+  <div class="flex w-full flex-col space-y-2">
+    <code class="text-sm text-gray-dark-50">font-display</code>
+    <p class="text-xl font-display">Raleway — The quick brown fox ...</p>
+  </div>
+  <div class="flex w-full flex-col space-y-2">
+    <code class="text-sm text-gray-dark-50">font-mono</code>
+    <p class="text-xl font-mono">System Font Stack — The quick brown fox ...</p>
+  </div>
+</div>
+<hr>
+<table class="mb-20">
+  <thead>
+    <th>Font Family</th>
+    <th>Usage</th>
+    <th>Utility class</th>
+    <th>Available weights and styles</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Roboto</td>
+      <td>Default body text</td>
+      <td><code>.font-body</code></td>
+      <td>400, 500, 700, italic 400, italic 700</td>
+    </tr>
+    <tr>
+      <td>Raleway</td>
+      <td>Headings</td>
+      <td><code>.font-display</code></td>
+      <td>600</td>
+    </tr>
+    <tr>
+      <td>System monospace font stack</td>
+      <td>Code (mostly internal use)</td>
+      <td><code>.font-mono</code></td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+<p>Rahvusarhiiv Design System uses two fonts: <strong>Roboto</strong> for body text and <strong>Raleway</strong> for headings.</p>
+<p>Every text should use the <code>body</code> font family by default. <code>display</code> is reserved for headings and titles. <code>mono</code> is an edge case when it comes to setting type, for example, for showing code snippets in internal tools.</p>
+<p>Both fonts are available from Google Fonts:</p>
+<ul>
+<li><a href="https://fonts.google.com/specimen/Roboto">Roboto (Google Fonts)</a></li>
+<li><a href="https://fonts.google.com/specimen/Raleway">Raleway (Google Fonts)</a></li>
+</ul>
+<h2>Typographic scale</h2>
+<pre class="language-md"><code class="language-md"><span class="token list punctuation">-</span> [ ] TODO: Fetch the scale from tailwind config file and build the table</code></pre>
+<h2>Typographic defaults for vanilla HTML</h2>
+<p>Rahvusarhiiv frontend framework uses Tailwind CSS <a href="https://tailwindcss.com/docs/typography-plugin">Typography plugin</a> for default styles in using vanilla HTML you don’t control, like HTML rendered from WYSIWYG editors and fetched from database.</p>
+<p>Wrap the rendered content with <code>prose</code> class.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>prose<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>Lorem ipsum...<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  [...]<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span></code></pre>
+<h2>Implementation in code</h2>
+<p>For prototyping you can use Google Fonts CDN, but for optimal performance self-hosting the font is more performant. <a href="https://leerob.io/blog/fonts">Read more about modern use of Web Fonts</a>.</p>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>preconnect<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>preconnect<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.gstatic.com<span class="token punctuation">"</span></span> <span class="token attr-name">crossorigin</span> <span class="token punctuation">/></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span><br>  <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>https://fonts.googleapis.com/css2?family=Raleway:wght@600&amp;family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;display=swap<span class="token punctuation">"</span></span><br>  <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span><br><span class="token punctuation">/></span></span></code></pre>
+
+          </article>
+        
+
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Rahvusarhiiv — Rahvusarhiiv Design System</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/prism-themes/themes/prism-a11y-dark.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="/assets/css/style.css">
+  </head>
+  <body class="bg-gray-light-300">
+    <header class="m-2 bg-theme-ais rounded shadow">
+  <div class="flex py-5 px-8 w-full items-center">
+
+    <img src="/assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
+
+    <p class="border-l ml-4 pl-4 font-medium">
+      Design System
+      </p>
+
+    <div class="ml-auto space-x-3">
+      <a href="#" class="font-bold underline">GitHub</a>
+      <a href="#" class="font-bold underline">Figma (UI Design Kit)</a>
+    </div>
+  </div>
+
+</header>
+
+    <div class="grid md:grid-cols-12 gap-2 m-2">
+      <aside class="md:col-span-3 p-4 bg-white rounded shadow">
+  <nav class="divide-y-2 divide-gray-light-900 sticky top-4">
+
+    <section class="pb-3">
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/changelog/">Changelog</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light  bg-action-light " href="/">Getting Started</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/versioning/">Versioning</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Design & Content</h3>
+
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/content/">Content (ET)</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/ui-design-kit/">UI Design Kit</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Styles</h3>
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/default/">Default Utilites</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/border-radius/">Border Radius</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/colors/">Colors</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/icons/">Icons</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/shadows/">Shadows</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/spacing/">Spacing</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/themes/">Themes</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/typography/">Typography</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Components & Patterns</h3>
+      
+      <ul class="">
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/components/status/">Components List</a>
+          </li>
+          <li>
+            <a class="block rounded py-2 px-4 hover:bg-action-light " href="/components/simple-table/">Simple Table</a>
+          </li>
+      </ul>
+    </section>
+
+  </nav>
+</aside>
+      <main class="md:col-span-9 p-6 bg-white rounded shadow">
+
+        
+          <article class="prose prose-lg max-w-5xl">
+            <h1>Getting Started</h1>
+<p>Welcome to Rahvusarhiiv Design System documentation site. This is the source of truth and hub to everything that is related to Rahvusarhiiv Design System.</p>
+<p>The system is used for designing and building consistent user interfaces faster within Rahvusarhiiv. It consists of different reusable tools and principles for designers and developers.</p>
+<ul>
+<li>UI Design Kit (built in Figma) for designers</li>
+<li>Voice and tone guidelines for content and texts</li>
+<li>Utility-first CSS framework (based on Tailwind CSS)</li>
+<li>Reusable coded components and patterns</li>
+</ul>
+<h2>For designers</h2>
+<pre class="language-md"><code class="language-md"><span class="token list punctuation">-</span> [ ] TODO: Briefly describe the UI Design Kit in Figma and link to doc site page.</code></pre>
+<hr>
+<h2>For developers</h2>
+<p>The design system frontend methodology is based on <a href="https://tailwindcss.com/">Tailwind CSS</a> — constraint-based utility classes. Tailwind CSS configuration and its values are the &quot;design tokens&quot; and an API for our design system. Sensible defaults on which components and complex user interfaces are built.</p>
+<blockquote>
+<p>Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.</p>
+</blockquote>
+<p>— tailwindcss.com</p>
+<h3>Usage</h3>
+<h4>1. Set up Tailwind CSS into your codebase build pipeline</h4>
+<p>To integrate a proper CSS generation for your frontend code build pipeline check out <a href="https://tailwindcss.com/docs/installation">Tailwind CSS documentation for examples with using standalone executable Tailwind CLI or PostCSS</a>.</p>
+<p><strong>Note:</strong> Rahvusarhiiv Design System Tailwind CSS uses the official <a href="https://tailwindcss.com/docs/typography-plugin">@tailwindcss/typography</a> plugin which is a dependency for the system.</p>
+<pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-D</span> @tailwindcss/typography</code></pre>
+<h4>2. Copy over the Design System custom <code>tailwind.config.js</code> into your system</h4>
+<p>The foundation of Tailwind CSS is the single configuration file <code>tailwind.config.js</code> from which all the utility classes are generated.</p>
+<p>Get the newest configuration file from the <a href="#">Rahvusarhiiv Design System repository</a>.</p>
+<h4>3. Configure your template paths</h4>
+<p>Add the paths to all of your template files into the <code>content</code> key in the new configuration file where Tailwind CSS utility classes will occur.</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// tailwind.config.js</span><br><br><span class="token comment">/** @type {import('tailwindcss').Config} */</span><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>  <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"./src/**/*.{html,js,php}"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token literal-property property">theme</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">extend</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+
+          </article>
+        
+
+      </main>
+    </div>
+  </body>
+</html>
