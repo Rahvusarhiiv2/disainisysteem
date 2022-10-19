@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: currentColor;
+  border-color: #D3D8DF;
   /* 2 */
 }
 
@@ -351,7 +351,7 @@ textarea {
 input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #798492;
   /* 2 */
 }
 
@@ -359,7 +359,7 @@ input::placeholder,
 textarea::placeholder {
   opacity: 1;
   /* 1 */
-  color: #9ca3af;
+  color: #798492;
   /* 2 */
 }
 
@@ -507,7 +507,7 @@ video {
 /* Additional base styles */
 
 body {
-  color: #23262a;
+  color: #242A30;
   font-family: Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -640,6 +640,7 @@ body {
   margin-top: 0;
   margin-bottom: 0.8888889em;
   line-height: 1.1111111;
+  font-family: Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .prose :where(h1 strong):not(:where([class~="not-prose"] *)) {
@@ -654,6 +655,7 @@ body {
   margin-top: 2em;
   margin-bottom: 1em;
   line-height: 1.3333333;
+  font-family: Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .prose :where(h2 strong):not(:where([class~="not-prose"] *)) {
@@ -668,6 +670,7 @@ body {
   margin-top: 1.6em;
   margin-bottom: 0.6em;
   line-height: 1.6;
+  font-family: Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .prose :where(h3 strong):not(:where([class~="not-prose"] *)) {
@@ -681,6 +684,7 @@ body {
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   line-height: 1.5;
+  font-family: Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .prose :where(h4 strong):not(:where([class~="not-prose"] *)) {
@@ -832,22 +836,21 @@ body {
 }
 
 .prose {
-  --tw-prose-body: #23262a;
-  --tw-prose-headings: #23262a;
-  --tw-prose-lead: #23262a;
-  --tw-prose-links: #0275d8;
-  --tw-prose-bold: #23262a;
-  --tw-prose-counters: #23262a;
-  --tw-prose-bullets: #3fa864;
-  --tw-prose-hr: #ced7e3;
-  --tw-prose-quotes: #23262a;
-  --tw-prose-quote-borders: #ced7e3;
-  --tw-prose-captions: #23262a;
-  --tw-prose-code: #23262a;
-  --tw-prose-pre-code: #23262a;
+  --tw-prose-body: #242A30;
+  --tw-prose-headings: #242A30;
+  --tw-prose-lead: #242A30;
+  --tw-prose-bold: #242A30;
+  --tw-prose-counters: #242A30;
+  --tw-prose-bullets: #6C7683;
+  --tw-prose-hr: #D3D8DF;
+  --tw-prose-quotes: #242A30;
+  --tw-prose-quote-borders: #D3D8DF;
+  --tw-prose-captions: #242A30;
+  --tw-prose-code: #242A30;
+  --tw-prose-pre-code: #242A30;
   --tw-prose-pre-bg: #fff;
-  --tw-prose-th-borders: #ced7e3;
-  --tw-prose-td-borders: #ced7e3;
+  --tw-prose-th-borders: #D3D8DF;
+  --tw-prose-td-borders: #D3D8DF;
   --tw-prose-invert-body: #fff;
   --tw-prose-invert-headings: #fff;
   --tw-prose-invert-lead: #fff;
@@ -967,6 +970,14 @@ body {
 
 .prose :where(.prose > :last-child):not(:where([class~="not-prose"] *)) {
   margin-bottom: 0;
+}
+
+.prose :where(h5):not(:where([class~="not-prose"] *)) {
+  font-family: Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+}
+
+.prose :where(h6):not(:where([class~="not-prose"] *)) {
+  font-family: Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
 }
 
 .prose-sm :where(.prose > ul > li p):not(:where([class~="not-prose"] *)) {
@@ -1315,6 +1326,10 @@ body {
   position: static;
 }
 
+.relative {
+  position: relative;
+}
+
 .sticky {
   position: sticky;
 }
@@ -1334,6 +1349,18 @@ body {
 
 .mb-20 {
   margin-bottom: 5rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-10 {
@@ -1372,6 +1399,10 @@ body {
   height: 9rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -1392,6 +1423,16 @@ body {
   max-width: 64rem;
 }
 
+.select-all {
+  -webkit-user-select: all;
+     -moz-user-select: all;
+          user-select: all;
+}
+
+.grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -1402,6 +1443,10 @@ body {
 
 .justify-center {
   justify-content: center;
+}
+
+.gap-4 {
+  gap: 1rem;
 }
 
 .gap-2 {
@@ -1426,10 +1471,22 @@ body {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-x-6 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .space-x-3 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
   margin-right: calc(0.75rem * var(--tw-space-x-reverse));
   margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
+.space-y-1 > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.25rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.25rem * var(--tw-space-y-reverse));
 }
 
 .divide-y-2 > :not([hidden]) ~ :not([hidden]) {
@@ -1438,17 +1495,13 @@ body {
   border-bottom-width: calc(2px * var(--tw-divide-y-reverse));
 }
 
-.divide-gray-light-900 > :not([hidden]) ~ :not([hidden]) {
+.divide-gray-200 > :not([hidden]) ~ :not([hidden]) {
   --tw-divide-opacity: 1;
-  border-color: rgb(206 215 227 / var(--tw-divide-opacity));
+  border-color: rgb(211 216 223 / var(--tw-divide-opacity));
 }
 
 .rounded {
   border-radius: .5rem;
-}
-
-.rounded-sm {
-  border-radius: 0.25rem;
 }
 
 .rounded-full {
@@ -1465,13 +1518,21 @@ body {
   border-bottom-right-radius: .5rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
 .border-l {
   border-left-width: 1px;
 }
 
-.bg-gray-light-700 {
+.bg-gray-200 {
   --tw-bg-opacity: 1;
-  background-color: rgb(216 223 233 / var(--tw-bg-opacity));
+  background-color: rgb(211 216 223 / var(--tw-bg-opacity));
 }
 
 .bg-green-500 {
@@ -1479,19 +1540,19 @@ body {
   background-color: rgb(63 168 100 / var(--tw-bg-opacity));
 }
 
+.bg-gray-50 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 243 246 / var(--tw-bg-opacity));
+}
+
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-action-light {
+.bg-green-50 {
   --tw-bg-opacity: 1;
   background-color: rgb(228 251 237 / var(--tw-bg-opacity));
-}
-
-.bg-gray-light-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(236 239 245 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-50 {
@@ -1550,6 +1611,10 @@ body {
   padding-bottom: 0.75rem;
 }
 
+.pb-4 {
+  padding-bottom: 1rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
@@ -1566,7 +1631,7 @@ body {
   font-family: Roboto, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.font-display {
+.font-heading {
   font-family: Raleway, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
@@ -1584,16 +1649,20 @@ body {
   line-height: 120%;
 }
 
-.font-medium {
-  font-weight: 500;
-}
-
 .font-bold {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .uppercase {
   text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
 }
 
 .italic {
@@ -1604,14 +1673,9 @@ body {
   line-height: 1;
 }
 
-.text-gray-dark-50 {
+.text-gray-300 {
   --tw-text-opacity: 1;
-  color: rgb(121 132 146 / var(--tw-text-opacity));
-}
-
-.text-info {
-  --tw-text-opacity: 1;
-  color: rgb(2 117 216 / var(--tw-text-opacity));
+  color: rgb(151 159 171 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1619,26 +1683,26 @@ body {
 }
 
 .shadow {
-  --tw-shadow: 0px 1.881250023841858px 4.625px 0px rgba(0,0,0,0.07), 0px 8.600000381469727px 13px 0px rgba(0,0,0,0.05), 0px 21.768749237060547px 34.875px 0px rgba(0,0,0,0.04), 0px 43px 80px 0px rgba(0,0,0,0.02);
-  --tw-shadow-colored: 0px 1.881250023841858px 4.625px 0px var(--tw-shadow-color), 0px 8.600000381469727px 13px 0px var(--tw-shadow-color), 0px 21.768749237060547px 34.875px 0px var(--tw-shadow-color), 0px 43px 80px 0px var(--tw-shadow-color);
+  --tw-shadow: 0px 43px 80px rgba(0, 0, 0, 0.02275), 0px 21.7687px 34.875px rgba(0, 0, 0, 0.035), 0px 8.6px 13px rgba(0, 0, 0, 0.04725), 0px 1.88125px 4.625px rgba(0, 0, 0, 0.07);
+  --tw-shadow-colored: 0px 43px 80px var(--tw-shadow-color), 0px 21.7687px 34.875px var(--tw-shadow-color), 0px 8.6px 13px var(--tw-shadow-color), 0px 1.88125px 4.625px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-sm {
-  --tw-shadow: 0px 0.4375px 4.625px 0px rgba(0,0,0,0.07), 0px 2px 13px 0px rgba(0,0,0,0.05), 0px 5.0625px 34.875px 0px rgba(0,0,0,0.04), 0px 10px 80px 0px rgba(0,0,0,0.02);
-  --tw-shadow-colored: 0px 0.4375px 4.625px 0px var(--tw-shadow-color), 0px 2px 13px 0px var(--tw-shadow-color), 0px 5.0625px 34.875px 0px var(--tw-shadow-color), 0px 10px 80px 0px var(--tw-shadow-color);
+  --tw-shadow: 0px 10px 80px rgba(0, 0, 0, 0.02275), 0px 5.0625px 34.875px rgba(0, 0, 0, 0.035), 0px 2px 13px rgba(0, 0, 0, 0.04725), 0px 0.4375px 4.625px rgba(0, 0, 0, 0.07);
+  --tw-shadow-colored: 0px 10px 80px var(--tw-shadow-color), 0px 5.0625px 34.875px var(--tw-shadow-color), 0px 2px 13px var(--tw-shadow-color), 0px 0.4375px 4.625px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-md {
-  --tw-shadow: 0px 1.443750023841858px 4.625px 0px rgba(0,0,0,0.07), 0px 6.599999904632568px 13px 0px rgba(0,0,0,0.05), 0px 16.706249237060547px 34.875px 0px rgba(0,0,0,0.04), 0px 33px 80px 0px rgba(0,0,0,0.02);
-  --tw-shadow-colored: 0px 1.443750023841858px 4.625px 0px var(--tw-shadow-color), 0px 6.599999904632568px 13px 0px var(--tw-shadow-color), 0px 16.706249237060547px 34.875px 0px var(--tw-shadow-color), 0px 33px 80px 0px var(--tw-shadow-color);
+  --tw-shadow: 0px 33px 80px rgba(0, 0, 0, 0.02275), 0px 16.7062px 34.875px rgba(0, 0, 0, 0.035), 0px 6.6px 13px rgba(0, 0, 0, 0.04725), 0px 1.44375px 4.625px rgba(0, 0, 0, 0.07);
+  --tw-shadow-colored: 0px 33px 80px var(--tw-shadow-color), 0px 16.7062px 34.875px var(--tw-shadow-color), 0px 6.6px 13px var(--tw-shadow-color), 0px 1.44375px 4.625px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .shadow-lg {
-  --tw-shadow: 0px 2.84375px 4.625px 0px rgba(0,0,0,0.07), 0px 13px 13px 0px rgba(0,0,0,0.05), 0px 32.90625px 34.875px 0px rgba(0,0,0,0.04), 0px 65px 80px 0px rgba(0,0,0,0.02);
-  --tw-shadow-colored: 0px 2.84375px 4.625px 0px var(--tw-shadow-color), 0px 13px 13px 0px var(--tw-shadow-color), 0px 32.90625px 34.875px 0px var(--tw-shadow-color), 0px 65px 80px 0px var(--tw-shadow-color);
+  --tw-shadow: 0px 65px 80px rgba(0, 0, 0, 0.02275), 0px 32.9062px 34.875px rgba(0, 0, 0, 0.035), 0px 13px 13px rgba(0, 0, 0, 0.04725), 0px 2.84375px 4.625px rgba(0, 0, 0, 0.07);
+  --tw-shadow-colored: 0px 65px 80px var(--tw-shadow-color), 0px 32.9062px 34.875px var(--tw-shadow-color), 0px 13px 13px var(--tw-shadow-color), 0px 2.84375px 4.625px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
@@ -1647,17 +1711,12 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.even\:bg-gray-light-50:nth-child(even) {
+.even\:bg-gray-50:nth-child(even) {
   --tw-bg-opacity: 1;
-  background-color: rgb(247 248 250 / var(--tw-bg-opacity));
+  background-color: rgb(240 243 246 / var(--tw-bg-opacity));
 }
 
-.hover\:bg-gray-light-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 243 248 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-action-light:hover {
+.hover\:bg-green-50:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(228 251 237 / var(--tw-bg-opacity));
 }
@@ -1677,7 +1736,17 @@ body {
     grid-column: span 9 / span 9;
   }
 
+  .md\:grid-cols-6 {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
   .md\:grid-cols-12 {
     grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-10 {
+    grid-template-columns: repeat(10, minmax(0, 1fr));
   }
 }

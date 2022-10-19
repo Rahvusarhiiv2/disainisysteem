@@ -17,7 +17,7 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 
   </head>
-  <body class="bg-gray-light-300">
+  <body class="bg-gray-50">
     <header class="m-2 bg-theme-ais rounded shadow">
   <div class="flex py-5 px-8 w-full items-center">
 
@@ -37,19 +37,19 @@
 
     <div class="grid md:grid-cols-12 gap-2 m-2">
       <aside class="md:col-span-3 p-4 bg-white rounded shadow">
-  <nav class="divide-y-2 divide-gray-light-900 sticky top-4">
+  <nav class="divide-y-2 divide-gray-200 sticky top-4">
 
     <section class="pb-3">
       
-      <ul class="">
-          <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./changelog/">Changelog</a>
+      <ul class="space-y-1">
+          <li class="">
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./changelog/">Changelog</a>
           </li>
-          <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light  bg-action-light " href="./">Getting Started</a>
+          <li class="">
+            <a class="block rounded py-2 px-4 hover:bg-green-50  bg-green-50 " href="./">Getting Started</a>
           </li>
-          <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./versioning/">Versioning</a>
+          <li class="">
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./versioning/">Versioning</a>
           </li>
       </ul>
     </section>
@@ -58,12 +58,12 @@
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Design & Content</h3>
 
       
-      <ul class="">
+      <ul class="space-y-1">
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./content/">Content (ET)</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./content/">Content (ET)</a>
           </li>
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./ui-design-kit/">UI Design Kit</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./ui-design-kit/">UI Design Kit</a>
           </li>
       </ul>
     </section>
@@ -71,30 +71,30 @@
     <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Styles</h3>
       
-      <ul class="">
+      <ul class="space-y-1">
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./default/">Default Utilites</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./default/">Default Utilites</a>
           </li>
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./border-radius/">Border Radius</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./border-radius/">Border Radius</a>
           </li>
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./colors/">Colors</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./colors/">Colors</a>
           </li>
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./icons/">Icons</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./icons/">Icons</a>
           </li>
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./shadows/">Shadows</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./shadows/">Shadows</a>
           </li>
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./spacing/">Spacing</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./spacing/">Spacing</a>
           </li>
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./themes/">Themes</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./themes/">Themes</a>
           </li>
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./typography/">Typography</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./typography/">Typography</a>
           </li>
       </ul>
     </section>
@@ -102,12 +102,12 @@
     <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Components & Patterns</h3>
       
-      <ul class="">
+      <ul class="space-y-1">
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./components/status/">Components List</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./components/status/">Components List</a>
           </li>
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-action-light " href="./components/simple-table/">Simple Table</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="./components/simple-table/">Simple Table</a>
           </li>
       </ul>
     </section>
@@ -128,7 +128,7 @@
 <li>Reusable coded components and patterns</li>
 </ul>
 <h2>For designers</h2>
-<pre class="language-md"><code class="language-md"><span class="token list punctuation">-</span> [ ] TODO: Briefly describe the UI Design Kit in Figma and link to doc site page.</code></pre>
+<p>From a designer's perspective, the primary tool is the <strong>UI Design Kit</strong>. I.e. a Figma file with all the same base styles and naming logic as is the CSS framework and developer tools. Design Kit contains components, styleguide and complex UI patterns.</p>
 <hr>
 <h2>For developers</h2>
 <p>The design system frontend methodology is based on <a href="https://tailwindcss.com/">Tailwind CSS</a> — constraint-based utility classes. Tailwind CSS configuration and its values are the &quot;design tokens&quot; and an API for our design system. Sensible defaults on which components and complex user interfaces are built.</p>
@@ -139,14 +139,18 @@
 <h3>Usage</h3>
 <h4>1. Set up Tailwind CSS into your codebase build pipeline</h4>
 <p>To integrate a proper CSS generation for your frontend code build pipeline check out <a href="https://tailwindcss.com/docs/installation">Tailwind CSS documentation for examples with using standalone executable Tailwind CLI or PostCSS</a>.</p>
-<p><strong>Note:</strong> Rahvusarhiiv Design System Tailwind CSS uses the official <a href="https://tailwindcss.com/docs/typography-plugin">@tailwindcss/typography</a> plugin which is a dependency for the system.</p>
+<p><strong>Note:</strong> Rahvusarhiiv Design System documentation site uses the official <a href="https://tailwindcss.com/docs/typography-plugin">@tailwindcss/typography</a> plugin which is a dependency for the site. If you want to use it on your application, install the package and add plugin into the configuration.</p>
 <pre class="language-shell"><code class="language-shell"><span class="token function">npm</span> <span class="token function">install</span> <span class="token parameter variable">-D</span> @tailwindcss/typography</code></pre>
-<h4>2. Copy over the Design System custom <code>tailwind.config.js</code> into your system</h4>
+<pre class="language-js"><code class="language-js"><span class="token comment">// tailwind.config.js</span><br><br><span class="token comment">/** @type {import('tailwindcss').Config} */</span><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>  <span class="token comment">// ...</span><br>  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@tailwindcss/typography"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<h4>2. Set up Rahvusarhiiv Design System configuration preset <code>rahvusarhiiv.preset.js</code> in your codebase</h4>
 <p>The foundation of Tailwind CSS is the single configuration file <code>tailwind.config.js</code> from which all the utility classes are generated.</p>
-<p>Get the newest configuration file from the <a href="#">Rahvusarhiiv Design System repository</a>.</p>
+<p>Rahvusarhiiv Design System use a <a href="https://tailwindcss.com/docs/presets">pre-configured preset</a> with all the base styles.</p>
+<p>Get the newest configuration preset file from the <a href="#">Rahvusarhiiv Design System repository</a>.</p>
+<p>Register the preset in your code base.</p>
+<pre class="language-js"><code class="language-js"><span class="token comment">// tailwind.config.js</span><br><br><span class="token comment">/** @type {import('tailwindcss').Config} */</span><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>  <span class="token literal-property property">presets</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"./rahvusarhiiv.preset.js"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token comment">// ...</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 <h4>3. Configure your template paths</h4>
 <p>Add the paths to all of your template files into the <code>content</code> key in the new configuration file where Tailwind CSS utility classes will occur.</p>
-<pre class="language-js"><code class="language-js"><span class="token comment">// tailwind.config.js</span><br><br><span class="token comment">/** @type {import('tailwindcss').Config} */</span><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>  <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"./src/**/*.{html,js,php}"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token literal-property property">theme</span><span class="token operator">:</span> <span class="token punctuation">{</span><br>    <span class="token literal-property property">extend</span><span class="token operator">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token punctuation">}</span><span class="token punctuation">,</span><br>  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
+<pre class="language-js"><code class="language-js"><span class="token comment">// tailwind.config.js</span><br><br><span class="token comment">/** @type {import('tailwindcss').Config} */</span><br>module<span class="token punctuation">.</span>exports <span class="token operator">=</span> <span class="token punctuation">{</span><br>  <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token string">"./src/**/*.{njk,md,html,php}"</span><span class="token punctuation">,</span> <span class="token string">"./src/**/*.svg"</span><span class="token punctuation">,</span> <span class="token string">"./.eleventy.js"</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token literal-property property">presets</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"./rahvusarhiiv.preset.js"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br>  <span class="token literal-property property">plugins</span><span class="token operator">:</span> <span class="token punctuation">[</span><span class="token function">require</span><span class="token punctuation">(</span><span class="token string">"@tailwindcss/typography"</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token punctuation">,</span><br><span class="token punctuation">}</span><span class="token punctuation">;</span></code></pre>
 
           </article>
         
