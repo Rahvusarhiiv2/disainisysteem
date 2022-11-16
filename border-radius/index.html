@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Themes — Rahvusarhiiv Design System</title>
+    <title>Border Radius — Rahvusarhiiv Design System</title>
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -25,11 +25,11 @@
 
     <p class="border-l ml-4 pl-4 font-medium">
       Design System
-      </p>
+    </p>
 
     <div class="ml-auto space-x-3">
-      <a href="#" class="font-bold underline">GitHub</a>
-      <a href="#" class="font-bold underline">Figma (UI Design Kit)</a>
+      <!--<a href="#" class="font-bold underline">Link1</a>-->
+      <!--<a href="#" class="font-bold underline">Link2</a>-->
     </div>
   </div>
 
@@ -46,7 +46,7 @@
             <a class="block rounded py-2 px-4 hover:bg-green-50 " href="../changelog/">Changelog</a>
           </li>
           <li class="">
-            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="../">Getting Started</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="../">Introduction</a>
           </li>
           <li class="">
             <a class="block rounded py-2 px-4 hover:bg-green-50 " href="../versioning/">Versioning</a>
@@ -69,11 +69,11 @@
     </section>
 
     <section class="py-3">
-      <h3 class="px-4 py-2 uppercase font-bold text-sm">Styles</h3>
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Classes & Properties</h3>
       
       <ul class="space-y-1">
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="../default/">Default Utilites</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="../getting-started/">Getting Started</a>
           </li>
           <li>
             <a class="block rounded py-2 px-4 hover:bg-green-50  bg-green-50 " href="../border-radius/">Border Radius</a>
@@ -100,14 +100,12 @@
     </section>
 
     <section class="py-3">
-      <h3 class="px-4 py-2 uppercase font-bold text-sm">Components & Patterns</h3>
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Components & Layouts</h3>
+      <h3 class="px-4 py-2 uppercase text-sm">Feedback</h3>
       
       <ul class="space-y-1">
           <li>
-            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="../components/status/">Components List</a>
-          </li>
-          <li>
-            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="../components/simple-table/">Simple Table</a>
+            <a class="block rounded py-2 px-4 hover:bg-green-50 " href="../components/alerts/">Alerts</a>
           </li>
       </ul>
     </section>
@@ -119,13 +117,39 @@
         
           <article class="prose prose-lg max-w-5xl">
             <h1>Border Radius</h1>
-<p>Rahvusarhiiv design system use rounded corners on various elements and components (buttons, forms, tooltips, etc) and they are mostly the same default size (utility class <code>.rounded</code>). <code>full</code> rounded border radius is reserved for components where full circle is needed. For example Badge.</p>
-<hr>
-<div class="flex space-x-10 mb-20">
-  <div class="flex items-center justify-center text-sm w-52 h-36 rounded shadow">Default</div>
-  <div class="flex items-center justify-center text-sm w-52 h-36 rounded-full shadow">Full</div>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Properties</th>
+<th>Recommended</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>rounded-sm</td>
+<td>border-radius: 0.25rem; /* 4px */</td>
+<td>for something like a button</td>
+</tr>
+<tr>
+<td>rounded</td>
+<td>border-radius: 0.5rem; /* 8px */</td>
+<td>for various elements and components (dropdowns, thumbnails, etc)</td>
+</tr>
+<tr>
+<td>rounded-full</td>
+<td>border-radius: 9999px;</td>
+<td>for components where full circle is needed</td>
+</tr>
+</tbody>
+</table>
+<div class="flex space-x-10 my-20">
+  <div class="flex items-center justify-center text-sm w-52 h-36 rounded-sm border border-black">rounded-sm</div>
+  <div class="flex items-center justify-center text-sm w-52 h-36 rounded border border-black">rounded</div>
+  <div class="flex items-center justify-center text-sm w-36 h-36 rounded-full border border-black">rounded-full</div>
 </div>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Default<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-full<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Full<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-sm ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-full ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+<p>Note that you can round sides and corners separately! Please consult <a href="https://tailwindcss.com/docs/border-radius#rounding-sides-separately">the official documentation</a>.</p>
 
           </article>
         
