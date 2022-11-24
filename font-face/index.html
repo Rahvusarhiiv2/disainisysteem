@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Autotüpograafia — Rahvusarhiivi disainisüsteem</title>
+    <title>Kirjatüübid — Rahvusarhiivi disainisüsteem</title>
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -91,7 +91,7 @@
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../spacing/">Astmik</a>
           </li>
           <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../font-face/">Kirjatüübid</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50  bg-green-50 " href="../font-face/">Kirjatüübid</a>
           </li>
           <li>
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../font-weight/">Kirjalaadid</a>
@@ -100,7 +100,7 @@
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../font-size/">Kirjasuurused</a>
           </li>
           <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50  bg-green-50 " href="../typography/">Autotüpograafia</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../typography/">Autotüpograafia</a>
           </li>
       </ul>
     </section>
@@ -122,59 +122,62 @@
 
         
           <article class="prose prose-lg max-w-5xl">
-            <h1>Autotüpograafia</h1>
-<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes saab kasutada HTML-koodile automaatselt rakenduvat tüpograafiat</p>
+            <h1>Kirjatüübid</h1>
+<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi kirjatüüpe</p>
 <table>
 <thead>
 <tr>
 <th>Klass</th>
+<th>Kirjatüüp</th>
 <th>Soovitus</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>prose</td>
-<td>HTML-redaktoriga lisatud sisu jaoks</td>
+<td>font-body</td>
+<td>Roboto</td>
+<td>vaikimisi kõikjal, kus pole määratud teist kirjatüüpi</td>
+</tr>
+<tr>
+<td>font-heading</td>
+<td>Raleway</td>
+<td>pealkirjade jaoks</td>
+</tr>
+<tr>
+<td>font-mono</td>
+<td>Monospace</td>
+<td>programmikoodi jaoks</td>
 </tr>
 </tbody>
 </table>
-<article class="prose rounded bg-gray-50 my-10 px-6 py-4 w-full">
-  <h2>
-    Nooruse 3, 50411 Tartu
-  </h2>
-  <ul>
-    <li>
-      telefon 738 7521
-    </li>
-    <li>
-      e-post tartu@ra.ee
-    </li>
-  </ul>
-  <h3>
-    Uurimissaal on avatud
-  </h3>
-  <ul>
-    <li>
-      esmaspäevast reedeni 9—19
-    </li>
-    <li>
-      riiklike pühade eel 9—13
-    </li>
-  </ul>
-  <h3>
-    Säilikute väljastamine
-  </h3>
-  <ul>
-    <li>
-      Korraga võib uurimissaali välja tellida kuni 15 arhivaali.
-    </li>
-    <li>
-      Tellitud arhivaalid jõuavad hoidlatest uurimissaali reeglina 1 tunni jooksul.
-    </li>
-  </ul>
-</article>
-<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>article</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>prose ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>article</span><span class="token punctuation">></span></span></code></pre>
-<p>Loe täpsemalt <a href="https://tailwindcss.com/docs/typography-plugin">dokumentatsioonist</a>.</p>
+<div class="bg-gray-50 rounded p-4 mb-8">
+  <div class="border-b flex space-x-6 pb-4">
+    <code class="text-sm select-all">font-body</code>
+    <span class="text-sm font-mono text-gray-300">Roboto</span>
+  </div>
+  <p class="font-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
+<div class="bg-gray-50 rounded p-4 mb-8">
+  <div class="border-b flex space-x-6 pb-4">
+    <code class="text-sm select-all">font-heading</code>
+    <span class="text-sm font-mono text-gray-300">Raleway</span>
+  </div>
+  <p class="font-heading text-xl">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
+<div class="bg-gray-50 rounded p-4 mb-8">
+  <div class="border-b flex space-x-6 pb-4">
+    <code class="text-sm select-all">font-mono</code>
+    <span class="text-sm font-mono text-gray-300">Monospace</span>
+  </div>
+  <p class="font-mono">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+  </p>
+</div>
+<pre class="language-html"><code class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-body ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-heading ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-mono ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 
           </article>
         
