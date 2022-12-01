@@ -6,6 +6,8 @@
 
     <title>Versioonid — Rahvusarhiivi disainisüsteem</title>
 
+    <link rel="stylesheet" href="../assets/css/style.css">
+
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +16,18 @@
     
     <link href="https://unpkg.com/prism-themes/themes/prism-a11y-dark.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../assets/css/style.css">
+    
+    <script>
+      function copy(el) {
+        navigator.clipboard.writeText(el.innerHTML);
+        el.nextElementSibling.textContent="Kopeeritud"
+        el.nextElementSibling.classList.remove("hidden");
+        setTimeout(function(){
+            el.nextElementSibling.classList.add("hidden");
+            el.nextElementSibling.textContent="Kopeeri"
+        }, 2000);
+      }
+    </script>
 
   </head>
   <body class="bg-gray-50">
@@ -61,6 +74,19 @@
           </li>
           <li>
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../ui-design-kit/">UI Design Kit</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../icons/generic/">Üldised ikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../icons/special/">Spetsiaalsed ikoonid</a>
           </li>
       </ul>
     </section>
