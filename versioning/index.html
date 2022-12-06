@@ -7,6 +7,11 @@
     <title>Versioonid — Rahvusarhiivi disainisüsteem</title>
 
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/themes/prism-ghcolors.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/19.1.1/tooltips.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +19,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     
-    <link href="https://unpkg.com/prism-themes/themes/prism-a11y-dark.css" rel="stylesheet">
+    <link href="https://unpkg.com/prism-themes/themes/prism-one-light.css" rel="stylesheet">
+
+    <style>
+      .tooltipped::before {
+        color: #fcf !important;
+        border-bottom-color: #ffccff !important;
+      }
+
+      .tooltipped::after {
+        background-color: #fcf !important;
+        color: #303 !important;
+      }
+    </style>
 
     
     <script>
@@ -31,7 +48,7 @@
 
   </head>
   <body class="bg-gray-50">
-    <header class="m-2 bg-theme-ais rounded shadow">
+    <header class="m-2 bg-theme-ais rounded-sm shadow">
   <div class="flex py-5 px-8 w-full items-center">
 
     <img src="../assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
@@ -155,14 +172,25 @@
 
   </nav>
 </aside>
-      <main class="md:col-span-9 p-6 bg-white rounded shadow">
+      <main class="md:col-span-9 p-6 bg-white rounded-sm shadow">
 
         
           <article class="prose prose-lg max-w-5xl">
             <h1>Versioonid</h1>
 <p class="-mt-8 text-gray-300">Rahvusarhiivi disainisüsteemil tervikuna versiooninumbrit ei ole</p>
 <p>Rahvusarhiivi <a href="../classes/getting-started/">stiilierisustel</a>, mis on määratud failis <code>rahvusarhiiv.presets.js</code>, on kolmeosaline versiooninumber:</p>
-<pre class="language-js"><code class="language-js"><span class="token comment">/**<br> * Rahvusarhiiv custom presets<br> * @version 1.0.0<br> */</span></code></pre>
+
+<div style="position: relative">
+  <pre class="language-js"><code id="code-7"class="language-js"><span class="token comment">/**<br> * Rahvusarhiiv custom presets<br> * @version 1.0.0<br> */</span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-7"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
 <p>See versiooninumber muutub <a href="https://semver.org/">semantilise versioneerimise</a> reeglite järgi:</p>
 <ul>
 <li>vasakult esimene on <strong>suurversiooni</strong> number (<em>major</em>);</li>
@@ -171,12 +199,25 @@
 </ul>
 <p>Suur- ja väikeversiooni vahe on selles, et väikeversioon tohib stiilierisusi ainult laiendada (ei tohi muuta). Kõik olemasolevad klassid, komponendid ja küljendid peavad toimima täpselt samamoodi nagu eelmise väikeversiooniga. Teisisõnu, väikeversioon peab tagama tagasiühilduvuse (<em>backward compatibility</em>). Suurversioon seevastu muudab stiilierisusi nii, et ühilduvus eelmisega versiooniga pole tagatud. Paik on kasutusel pisiparanduste jaoks.</p>
 <p>Kui komponendid ja küljendid kasutavad esimest suurversiooni, ei ole vaja seda koodis ära märkida, aga alates teisest suurversioonist on versiooninumbri lisamine kohustuslik. Näiteks:</p>
-<pre class="language-html"><code class="language-html"><span class="token comment">&lt;!-- rahvusarhiiv.presets.js 2.0.0 --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border-l-4 border-yellow-400 bg-yellow-50 p-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  ...<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-34"class="language-html"><span class="token comment">&lt;!-- rahvusarhiiv.presets.js 2.0.0 --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border-l-4 border-yellow-400 bg-yellow-50 p-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  ...<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-34"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
 
           </article>
         
 
       </main>
     </div>
+    <script>function showTooltip(e,o){e.trigger.className.includes("tooltipped")||(e.trigger.children[0].className="tooltipped tooltipped-s",e.trigger.children[0].ariaLabel=o)}window.addEventListener("load",()=>{var e=new ClipboardJS(".code-copy");e.on("success",e=>showTooltip(e,"Kopeeritud")),e.on("error",e=>showTooltip(e,"Kopeerimine ebaõnnestus"))});</script>
+<script async src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.js"></script>
   </body>
 </html>

@@ -7,6 +7,11 @@
     <title>Hääletoon — Rahvusarhiivi disainisüsteem</title>
 
     <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/themes/prism-ghcolors.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/19.1.1/tooltips.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +19,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
 
     
-    <link href="https://unpkg.com/prism-themes/themes/prism-a11y-dark.css" rel="stylesheet">
+    <link href="https://unpkg.com/prism-themes/themes/prism-one-light.css" rel="stylesheet">
+
+    <style>
+      .tooltipped::before {
+        color: #fcf !important;
+        border-bottom-color: #ffccff !important;
+      }
+
+      .tooltipped::after {
+        background-color: #fcf !important;
+        color: #303 !important;
+      }
+    </style>
 
     
     <script>
@@ -31,7 +48,7 @@
 
   </head>
   <body class="bg-gray-50">
-    <header class="m-2 bg-theme-ais rounded shadow">
+    <header class="m-2 bg-theme-ais rounded-sm shadow">
   <div class="flex py-5 px-8 w-full items-center">
 
     <img src="../../assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
@@ -155,7 +172,7 @@
 
   </nav>
 </aside>
-      <main class="md:col-span-9 p-6 bg-white rounded shadow">
+      <main class="md:col-span-9 p-6 bg-white rounded-sm shadow">
 
         
           <article class="prose prose-lg max-w-5xl">
@@ -165,9 +182,9 @@
 <p><strong>Kui sihtrühmi eristada pole võimalik</strong> (nt AIS, kaardisüsteem), kõnetame kasutajat sõbralikus <strong>sina</strong>-vormis ning vajadusel kasutame umbisikulist tegumoodi, nt <em>Proovi erinevaid ladina tähtede kombinatsioone</em>. <em>Otsitakse järgmistelt väljadelt</em>.</p>
 <p>Veebikeskkonnas, <strong>kus kõnetatakse mitmeid erinevaid sihtrühmi</strong> ning neile suunatud sisu asub eri sisulehtedel (nt Rahvusarhiivi koduleht, VAU), saame kasutaja poole pöörduda <strong>vastavalt sihtrühma iseloomule</strong>.</p>
 <ul>
-<li>Näiteks RA viitamise juhend on vormistatud teadusringkonnale vastavalt ametlikumas toonis:
+<li>Näiteks RA viitamise juhend on vormistatud teadusringkonnale vastavalt ametlikumas toonis:<br>
 <em>Kirjutage leidandmed AISis esineval kujul, kasutades arhiivi, nimistu ja säiliku numbrite eraldamiseks punkte</em>.</li>
-<li>Arhiivikooli sisulehel, mille sihtrühmaks on õpetajad ning õpilased, kasutame nooruslikku ja vaba kõnestiili:
+<li>Arhiivikooli sisulehel, mille sihtrühmaks on õpetajad ning õpilased, kasutame nooruslikku ja vaba kõnestiili:<br>
 <em>Seiklus ja arhiiv?! Need kaks mõistet ei sobi kokku? Muidugi sobivad!</em></li>
 </ul>
 
@@ -176,5 +193,7 @@
 
       </main>
     </div>
+    <script>function showTooltip(e,o){e.trigger.className.includes("tooltipped")||(e.trigger.children[0].className="tooltipped tooltipped-s",e.trigger.children[0].ariaLabel=o)}window.addEventListener("load",()=>{var e=new ClipboardJS(".code-copy");e.on("success",e=>showTooltip(e,"Kopeeritud")),e.on("error",e=>showTooltip(e,"Kopeerimine ebaõnnestus"))});</script>
+<script async src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.js"></script>
   </body>
 </html>
