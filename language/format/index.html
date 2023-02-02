@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vormistus- ja vormindusvõtted — Rahvusarhiivi disainisüsteem</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/themes/prism-ghcolors.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/19.1.1/tooltips.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/prism-themes/themes/prism-one-light.css" rel="stylesheet">
+
+    <style>
+      .tooltipped::before {
+        color: #fcf !important;
+        border-bottom-color: #ffccff !important;
+      }
+
+      .tooltipped::after {
+        background-color: #fcf !important;
+        color: #303 !important;
+      }
+    </style>
+
+    
+    <script>
+      function copy(el) {
+        navigator.clipboard.writeText(el.innerHTML);
+        el.nextElementSibling.textContent="Kopeeritud"
+        el.nextElementSibling.classList.remove("hidden");
+        setTimeout(function(){
+            el.nextElementSibling.classList.add("hidden");
+            el.nextElementSibling.textContent="Kopeeri"
+        }, 2000);
+      }
+    </script>
+
+  </head>
+  <body class="bg-gray-50">
+    <header class="m-2 bg-theme-ais rounded-sm shadow">
+  <div class="flex py-5 px-8 w-full items-center">
+
+    <img src="../../assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
+
+    <p class="border-l ml-4 pl-4 font-medium">
+      disainisüsteem
+    </p>
+
+    <div class="ml-auto space-x-3">
+      <!--<a href="#" class="font-bold underline">Link1</a>-->
+      <!--<a href="#" class="font-bold underline">Link2</a>-->
+    </div>
+  </div>
+
+</header>
+
+    <div class="grid md:grid-cols-12 gap-2 m-2">
+      <aside class="md:col-span-3 p-4 bg-white rounded-sm shadow">
+  <nav class="divide-y-2 divide-gray-200 sticky top-4">
+
+    <section class="pb-3">
+      
+      <ul class="space-y-1">
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../">Sissejuhatus</a>
+          </li>
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../versioning/">Versioonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Toon, keel ja vorm</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/voice/">Pöördumine ja hääletoon</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/orthography/">Heakeelsus ja õigekeelsus</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50  bg-green-50 " href="../../language/format/">Vormistus- ja vormindusvõtted</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Kasutajaliides ja -kogemus</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/design-1/">Seda</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/design-2/">Teist</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/getting-started/">Seadistamine</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/border-radius/">Kumerused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/shadows/">Varjud</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/colors/">Värvid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/themes/">Teemad</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/spacing/">Astmik</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-face/">Kirjatüübid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-weight/">Kirjalaadid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-size/">Kirjasuurused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/typography/">Autotüpograafia</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Tagasiside</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../components/alerts/">Hoiatused ja teated</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../components/empty-states/">Tühiolekud</a>
+          </li>
+      </ul>
+    </section>
+
+  </nav>
+</aside>
+      <main class="md:col-span-9 p-6 bg-white rounded-sm shadow">
+
+        
+          <article class="prose prose-lg max-w-5xl">
+            <h1>Vormistus- ja vormindusvõtted</h1>
+<p class="-mt-8 text-gray-300">Loetelude ja tabelite vormistus- ja vormindusvõtted</p>
+<h2>Loetelu</h2>
+<p><strong>Loetelujaotisi on mõtet nummerdada</strong> siis, kui tahetakse rõhutada esitatud andmete järjestust või arvu, kui mujal tekstis viidatakse mõnele loetelu jaotisele või kui need koosnevad mitmest lausest. Teistel juhtudel on parem kasutada täppe või muid tähistajaid.</p>
+<p><strong>Sõnadest või fraasidest koosneva loetelu</strong> jaotised algavad väikese tähega (v.a nimed) ja nende lõppu pannakse koma. Kui sissejuhatav lause sisaldab kokkuvõtusõna (järgmised, alljärgnev vm), pannakse selle järele koolon.</p>
+<div class="leading-snug bg-gray-50 rounded px-10 pt-6 pb-4 mb-10">
+Palun esitage võimalikult täpselt järgmised andmed:
+<ul>
+<li>asutuse nimetus ja struktuuriüksus,</li>
+<li>amet,</li>
+<li>töötamise aeg.</li>
+</ul>
+</div>
+<p>Sissejuhatav lause võib aga jätkuda sujuvalt ka loetelu jaotistes. Sel juhul kokkuvõtusõna puudub ja kooloni võib ära jätta.</p>
+<div class="leading-snug bg-gray-50 rounded px-10 pt-6 pb-4 mb-10">
+Kauglaenutuseks ei ole võimalik tellida
+<ul>
+<li>enne 1750. aastat ilmunud raamatuid,</li>
+<li>erimõõdulisi trükiseid,</li>
+<li>restaureerimist vajavaid köiteid.</li>
+</ul>
+</div>
+<p>Loetelujaotiste tugevama eraldusmärgina kasutatakse semikoolonit – kindlasti juhul, kui näiteks fraasidest koosneva loetelu mõnes jaotises on lause, mis eraldatakse eelnevast punktiga, aga ka siis, kui mõni jaotis sisaldab koma.</p>
+<div class="leading-snug bg-gray-50 rounded px-10 pt-6 pb-4 mb-10">
+Palun esitage võimalikult täpselt järgmised andmed:
+<ul>
+<li>notar, kelle juures menetlus toimus;</li>
+<li>dokumendi liik (leping, testament, tunnistus);</li>
+<li>dokumendi koostamise kuupäev.</li>
+</ul>
+</div>
+<p><strong>Kui loetelujaotisteks on laused</strong>, lõpeb sissejuhatav lause enamasti punktiga ja jaotised kirjutatakse esisuurtähega. Punkt pannakse ka järjestustähisena kasutatava numbri järele ja loetelu iga jaotise lõppu.</p>
+<div class="leading-snug bg-gray-50 rounded px-10 pt-6 pb-4 mb-10">
+Koopiatellimuse esitamiseks läbige järgmised sammud.
+<ol>
+<li>Klõpsake sakil &quot;Tellimused&quot;, logige sisse või registreerige end uurijaks.</li>
+<li>Sisestage säiliku leidandmed ehk viide.</li>
+<li>Valige tellimuse liigi alt koopia.</li>
+<li>Valige koopialiik.</li>
+<li>Märkige, kas soovite koopiat kogu säilikust või ainult osast.</li>
+<li>Kinnitage tellimus klõpsates nupul &quot;Kinnita&quot;. Tellimused saab korraga kinnitada, kui teete linnukese lahtrisse &quot;Märgi kõik&quot; ning klõpsate nupul &quot;Kinnita koopiatellimus&quot;.</li>
+<li>Valige makse- ja kättesaamisviis.</li>
+</ol>
+</div>
+<p><strong>Mitmetasandilisi loetelusid</strong> koostades tuleb jälgida, et ühelgi tasandil ei oleks ainult ühte jaotist. Üksik jaotis tuleb liita eelmise tasandiga või võimaluse korral moodustada vähemalt kaks jaotist. Mitmetasandilise loetelu viimase järjestusnumbri järele pannakse punkt. Kui loetelu jaotisele viidatakse tekstis, siis järjestusnumbri lõpupunkt kustub (nt <span class="font-bold italic text-green-500">punktis 1.2.2 nimetatud teenused</span>).</p>
+<div class="leading-snug bg-gray-50 rounded px-10 pt-6 pb-4 mb-10">
+<p class="mt-1">1. Kopeerimisteenused</p>
+<p class="ml-5">1.1. Paberkoopia</p>
+<p class="ml-14">1.1.1. Paberarhivaalist või trükisest</p>
+<p class="ml-14">1.1.2. Digitaalkujutisest väljatrükk</p>
+<p class="ml-14">1.1.3. Koopialehe märgistamine (tembeldamine) leidandmetega</p>
+<p class="ml-5">1.2. Digitaalkoopia</p>
+<p class="ml-14">1.2.1. Tarbekoopia kuni A2 formaadis arhivaalist</p>
+<p class="ml-14">1.2.2. Trükikvaliteediga koopia</p>
+</div>
+<p><strong>Kui loetelu koosneb küsimustest</strong>, pannakse sissejuhatava lause lõppu punkt ja iga loetelujaotiseks oleva küsilause lõppu küsimärk.</p>
+<div class="leading-snug bg-gray-50 rounded px-10 pt-6 pb-4 mb-10">
+Vaata fotot uuesti ja pööra tähelepanu järgmistele küsimustele.
+<ol>
+<li>Milliseid inimesi ja objekte kujutisel näed?</li>
+<li>Mida inimesed kujutisel teevad?</li>
+<li>Mida see pilt räägib inimeste eluolu ja ajastu kohta?</li>
+<li>Millised detailid fotol annavad vihjeid perioodi kohta, mil foto on tehtud?</li>
+<li>Mis eesmärgil see foto on tehtud?</li>
+</ol>
+</div>
+<p><strong>Kui loetelu moodustab küsimuse</strong>, mis algab sissejuhatava lausega ja jätkub loetelujaotistes eri vastusevariantidega, võib panna iga jaotise järele koma ja lõpetada loetelu küsimärgiga.</p>
+<div class="leading-snug bg-gray-50 rounded px-10 pt-6 pb-4 mb-10">
+Kas teie tellimuse eesmärk on
+<ul>
+<li>teadustöö,</li>
+<li>kodu-uurimine,</li>
+<li>genealoogia,</li>
+<li>õppetöö?</li>
+</ul>
+</div>
+<p><strong>Kui loetelus kasutatakse keeleväliseid märke</strong> (täppe, tärne, pikki kriipse, linnukesi jm) ja kujundlikel kaalutlustel soovitakse jätta visuaalselt puhtamat muljet, võib jaotised jätta ka lõpumärgita (koma, semikooloni või punktita).</p>
+<div class="leading-snug bg-gray-50 rounded px-10 pt-6 pb-4 mb-10">
+Uurimissaal on avatud
+<ul>
+<li>esmaspäevast reedeni 9—19</li>
+<li>laupäeval 10—15</li>
+<li>riiklike pühade eel 9—13</li>
+</ul>
+</div>
+<h2>Tabel</h2>
+<p><strong>Vertikaaljooned</strong> võib ära jätta siis, kui veergude vahel on piisavalt ruumi.</p>
+<div class="not-prose overflow-hidden ring-1 ring-gray-200 md:rounded mb-10">
+  <table class="min-w-full divide-y divide-gray-200">
+    <thead class="bg-gray-50">
+      <tr>
+        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 sm:pl-6">Nimetus</th>
+        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900">E-post</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200 bg-white">
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Tartus</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">tartu@ra.ee</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Tallinnas</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">tallinn@ra.ee</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Filmiarhiiv</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">filmiarhiiv@ra.ee</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Rakveres</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">rakvere@ra.ee</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Valgas</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">valga@ra.ee</td>
+      </tr>                       
+    </tbody>
+  </table>
+</div>
+<p>Kui veergude vahel on piisavalt ruumi ja read on <strong>triibutatud</strong>, siis võib ära jätta <strong>nii vertikaal- kui horisontaaljooned</strong>.</p>
+<div class="not-prose overflow-hidden ring-1 ring-gray-200 md:rounded mb-10">
+  <table class="min-w-full divide-y divide-gray-200">
+    <thead class="bg-gray-50">
+      <tr>
+        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 sm:pl-6">Nimetus</th>
+        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900">E-post</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="even:bg-gray-50 even:bg-opacity-50">
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Tartus</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">tartu@ra.ee</td>
+      </tr>
+      <tr class="even:bg-gray-50 even:bg-opacity-50">
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Tallinnas</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">tallinn@ra.ee</td>
+      </tr>
+      <tr class="even:bg-gray-50 even:bg-opacity-50">
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Filmiarhiiv</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">filmiarhiiv@ra.ee</td>
+      </tr> 
+      <tr class="even:bg-gray-50 even:bg-opacity-50">
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Rakveres</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">rakvere@ra.ee</td>
+      </tr>
+      <tr class="even:bg-gray-50 even:bg-opacity-50">
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Rahvusarhiiv Valgas</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500">valga@ra.ee</td>
+      </tr>                     
+    </tbody>
+  </table>
+</div>
+<p><strong>Arvandmed tuleb joondada paremale</strong>, et järgujaotised oleksid kohakuti. Neljakohalistes arvudes tuleb niisuguse joondamise korral kasutada erandlikult tühikut, et kolme tagumise numbri ees olev vahe jookseks ühtlaselt ülevalt alla. Kui samu neljakohalisi arve käsitletakse aga tekstis, kirjutatakse need ilma tühikuta.</p>
+<div class="not-prose overflow-hidden ring-1 ring-gray-200 md:rounded mb-10 lg:w-96">
+  <table class="min-w-full divide-y divide-gray-200">
+    <thead class="bg-gray-50">
+      <tr>
+        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 sm:pl-6">Eesmärk</th>
+        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 text-right">Uurijate arv</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200 bg-white">
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Kodu-uurimine</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">40 073</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Genealoogia</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">33 995</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Õppetöö</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">7 774</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Teadustöö</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">5 775</td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 sm:pl-6">Õiguste tõestamine</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-right">2 799</td>
+      </tr>                       
+    </tbody>
+  </table>
+</div>
+<p><strong>Kui arvud on erisuguste mõõtühikutega</strong> või kuuluvad eri suurusjärkudesse, joondatakse need lahtri keskele.</p>
+<div class="not-prose overflow-hidden ring-1 ring-gray-200 md:rounded mb-10">
+  <table class="min-w-full divide-y divide-gray-200">
+    <thead class="bg-gray-50">
+      <tr>
+        <th scope="col" class="py-3.5 pl-4 pr-3 text-left font-semibold text-gray-900 sm:pl-6">Failinimi</th>
+        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900 text-center">Maht</th>
+        <th scope="col" class="relative py-3.5 pl-3 pr-4 sm:pr-6"></th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200 bg-white">
+      <tr>
+        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-gray-500 sm:pl-6">lvma-888-18561-l-11.jpg</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-center">1 MB</td>
+        <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right font-medium sm:pr-6">
+          <a href="#" class="text-indigo-600 hover:text-indigo-900">Laadi alla</a>
+        </td>
+      </tr>
+      <tr>
+        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-gray-500 sm:pl-6">lvma-888-18561-l-12.jpg</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-center">398 KB</td>
+        <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right font-medium sm:pr-6">
+          <a href="#" class="text-indigo-600 hover:text-indigo-900">Laadi alla</a>
+        </td>
+      </tr> 
+      <tr>
+        <td class="whitespace-nowrap py-4 pl-4 pr-3 text-gray-500 sm:pl-6">lvma-888-18561-l-13.jpg</td>
+        <td class="whitespace-nowrap px-4 py-4 text-gray-500 text-center">430 KB</td>
+        <td class="relative whitespace-nowrap py-4 pl-3 pr-4 text-right font-medium sm:pr-6">
+          <a href="#" class="text-indigo-600 hover:text-indigo-900">Laadi alla</a>
+        </td>
+      </tr>           
+    </tbody>
+  </table>
+</div>
+<p><strong>Korduvad andmed tuleb panna pealkirja</strong>, lahtritesse võib jääda üksnes see teave, mis erineb. Tähise või lühendiga kirjutatud mõõtühikuid ei eraldata eelnevast tekstist komaga ega panda sulgudesse, samuti ei lisata neile käändelõppu.</p>
+<div class="not-prose overflow-hidden ring-1 ring-gray-200 md:rounded mb-10">
+  <table class="min-w-full divide-y divide-gray-200">
+    <thead class="bg-gray-50">
+      <tr class="divide-x divide-gray-200">
+        <th scope="col" class="py-3.5 pl-4 pr-4 text-left font-semibold text-gray-900 sm:pl-6">Arvestus</th>
+        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900">Asutus</th>
+        <th scope="col" class="py-3.5 pl-4 pr-4 text-left font-semibold text-gray-900 sm:pr-6 text-right">Kokku €</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200 bg-white">
+      <tr class="divide-x divide-gray-200">
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6">AKA2023-00006</td>
+        <td class="whitespace-nowrap p-4 text-gray-500">Sihtasutus Eesti Mälu Instituut</td>
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">30,60</td>
+      </tr>
+      <tr class="divide-x divide-gray-200">
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6">AKA2023-00005</td>
+        <td class="whitespace-nowrap p-4 text-gray-500">Harku Vallavalitsus</td>
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">7,20</td>
+      </tr> 
+      <tr class="divide-x divide-gray-200">
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6">AKA2023-00004</td>
+        <td class="whitespace-nowrap p-4 text-gray-500">Delfi Meedia AS</td>
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">5,00</td>
+      </tr>
+      <tr class="divide-x divide-gray-200">
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6">AKA2023-00003</td>
+        <td class="whitespace-nowrap p-4 text-gray-500">AS Äripäev</td>
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">20,50</td>
+      </tr>     
+    </tbody>
+  </table>
+</div>
+<p><strong>Tabelis ei tohi olla veerge, kus on ühed ja samad andmed.</strong></p>
+<p><strong>Tabelipeas olev info peaks olema võimalikult lühike</strong>, nt mitte <span class="italic text-gray-500">*ERPLY arve number</span>, vaid <span class="font-bold italic text-green-500">Arve</span>. Kui võimalik, esitatakse tabelipeas olevad sõnad ainsuses.</p>
+<p><strong>Tabelipeas kasutatakse suurt algustähte.</strong> Olenevalt teksti iseloomust võib lahtrite tekst alata nii suure kui ka väikese algustähega; kui lahtris on täislause, siis suure algustähega.</p>
+<p><strong>Lõpupunkti enamasti tabelilahtrites ei kasutata</strong>, sest eristajana toimivad tabeli piirjooned. Kui lahtris on mitu lauset, kasutatakse eraldavat punkti.</p>
+<p><strong>Kui tabelis olevaid andmeid on vaja kommenteerida</strong>, võib vajalikku kohta lisada viitemärgi, korrata seda tabeli all ja kirjutada selle järele selgituse. Kui viitemärk käib kogu tabeli kohta, pannakse see pealkirja juurde; kui tulbas olevate andmete kohta, siis tulba päisesse; kui mõne lahtris oleva teabeüksuse kohta, siis selle järele. Joonealused märkused esitatakse kaks punkti väiksemas kirjas.</p>
+<div class="not-prose overflow-hidden ring-1 ring-gray-200 md:rounded mb-10 lg:w-[600px]">
+  <table class="min-w-full divide-y divide-gray-200">
+    <thead class="bg-gray-50">
+      <tr class="divide-x divide-gray-200">
+        <th scope="col" class="py-3.5 pl-4 pr-4 text-left font-semibold text-gray-900 sm:pl-6 text-center">#</th>
+        <th scope="col" class="px-4 py-3.5 text-left font-semibold text-gray-900">Nimi</th>
+        <th scope="col" class="py-3.5 pl-4 pr-4 text-left font-semibold text-gray-900 sm:pr-6 text-right">Sisestanud kirjeid</th>
+      </tr>
+    </thead>
+    <tbody class="divide-y divide-gray-200 bg-white">
+      <tr class="divide-x divide-gray-200">
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-5000 sm:pl-6 text-center">1</td>
+        <td class="whitespace-nowrap p-4 text-gray-500">Tiina Ailt</td>
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">19 773</td>
+      </tr>
+      <tr class="divide-x divide-gray-200">
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6 text-center">2</td>
+        <td class="whitespace-nowrap p-4 text-gray-500">Anella Palginõmm</td>
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">14 251</td>
+      </tr> 
+      <tr class="divide-x divide-gray-200">
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6 text-center">3</td>
+        <td class="whitespace-nowrap p-4 text-gray-500">Eliis Truuman*</td>
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">9 144</td>
+      </tr>
+      <tr class="divide-x divide-gray-200">
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pl-6 text-center">4</td>
+        <td class="whitespace-nowrap p-4 text-gray-500">Piret Tarto</td>
+        <td class="whitespace-nowrap py-4 pl-4 pr-4 text-gray-500 sm:pr-6 text-right">8 204</td>
+      </tr>     
+    </tbody>
+  </table>
+</div>
+<div class="-mt-6 text-sm">* Rahvusarhiivi töötaja.</div>
+          </article>
+        
+
+      </main>
+    </div>
+    <script>function showTooltip(e,o){e.trigger.className.includes("tooltipped")||(e.trigger.children[0].className="tooltipped tooltipped-s",e.trigger.children[0].ariaLabel=o)}window.addEventListener("load",()=>{var e=new ClipboardJS(".code-copy");e.on("success",e=>showTooltip(e,"Kopeeritud")),e.on("error",e=>showTooltip(e,"Kopeerimine ebaõnnestus"))});</script>
+<script async src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.js"></script>
+  </body>
+</html>

@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Heakeelsus ja õigekeelsus — Rahvusarhiivi disainisüsteem</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/themes/prism-ghcolors.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/19.1.1/tooltips.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/prism-themes/themes/prism-one-light.css" rel="stylesheet">
+
+    <style>
+      .tooltipped::before {
+        color: #fcf !important;
+        border-bottom-color: #ffccff !important;
+      }
+
+      .tooltipped::after {
+        background-color: #fcf !important;
+        color: #303 !important;
+      }
+    </style>
+
+    
+    <script>
+      function copy(el) {
+        navigator.clipboard.writeText(el.innerHTML);
+        el.nextElementSibling.textContent="Kopeeritud"
+        el.nextElementSibling.classList.remove("hidden");
+        setTimeout(function(){
+            el.nextElementSibling.classList.add("hidden");
+            el.nextElementSibling.textContent="Kopeeri"
+        }, 2000);
+      }
+    </script>
+
+  </head>
+  <body class="bg-gray-50">
+    <header class="m-2 bg-theme-ais rounded-sm shadow">
+  <div class="flex py-5 px-8 w-full items-center">
+
+    <img src="../../assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
+
+    <p class="border-l ml-4 pl-4 font-medium">
+      disainisüsteem
+    </p>
+
+    <div class="ml-auto space-x-3">
+      <!--<a href="#" class="font-bold underline">Link1</a>-->
+      <!--<a href="#" class="font-bold underline">Link2</a>-->
+    </div>
+  </div>
+
+</header>
+
+    <div class="grid md:grid-cols-12 gap-2 m-2">
+      <aside class="md:col-span-3 p-4 bg-white rounded-sm shadow">
+  <nav class="divide-y-2 divide-gray-200 sticky top-4">
+
+    <section class="pb-3">
+      
+      <ul class="space-y-1">
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../">Sissejuhatus</a>
+          </li>
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../versioning/">Versioonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Toon, keel ja vorm</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/voice/">Pöördumine ja hääletoon</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50  bg-green-50 " href="../../language/orthography/">Heakeelsus ja õigekeelsus</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/format/">Vormistus- ja vormindusvõtted</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Kasutajaliides ja -kogemus</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/design-1/">Seda</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/design-2/">Teist</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/getting-started/">Seadistamine</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/border-radius/">Kumerused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/shadows/">Varjud</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/colors/">Värvid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/themes/">Teemad</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/spacing/">Astmik</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-face/">Kirjatüübid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-weight/">Kirjalaadid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-size/">Kirjasuurused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/typography/">Autotüpograafia</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Tagasiside</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../components/alerts/">Hoiatused ja teated</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../components/empty-states/">Tühiolekud</a>
+          </li>
+      </ul>
+    </section>
+
+  </nav>
+</aside>
+      <main class="md:col-span-9 p-6 bg-white rounded-sm shadow">
+
+        
+          <article class="prose prose-lg max-w-5xl">
+            <h1>Heakeelsus ja õigekeelsus</h1>
+<p class="-mt-8 text-gray-300">
+	Arendaja ei pea koostama pikki sisutekste, kuid tal tuleb sõnastada iga päev lühikesi silte, pealkirju, teateid, selgitusi ja sõnumeid, mida võib suures rakenduses olla tuhandeid ja mis tarkvara arenedes sageli muutuvad. Nende lühitekstide koostamisega peab arendaja ise hakkama saama. Abiks on järgnevad juhised.
+</p>
+<h2>Lühendikirjutus</h2>
+<p><strong>Elektronpost</strong> või elektronkiri on korrektne lühendada <span class="font-bold italic text-green-500">e-post</span>, <span class="font-bold italic text-green-500">e-kiri</span>, mitte inglispäraselt <span class="italic text-gray-500">*e-mail</span>, <span class="italic text-gray-500">*email</span> või <span class="italic text-gray-500">*mail</span>.</p>
+<p><strong>Arvelduskonto</strong> korrektne lühend on <span class="font-bold italic text-green-500">ak</span>, mitte <span class="italic text-gray-500">*a/a</span>. Lühend <em>ak</em> sobib kasutamiseks arvetel, aga tekstis või vormis on soovitatav kasutada <span class="font-bold italic text-green-500">konto nr</span> või <span class="font-bold italic text-green-500">IBAN</span>.</p>
+<p><strong>Registrikoodi</strong> lühend on <em>rg-kood</em>, aga kuna see mõjub võõralt, võib Rahvusarhiivi tarkvaras lühendada registrikoodi <span class="font-bold italic text-green-500">reg-kood</span> (oluline on, et lühendis ei oleks sidekriipsu asemel punkt).</p>
+<p>Sobimatu on jätta teksti <strong>euro</strong> variandid <span class="italic text-gray-500">*EURI</span>, <span class="italic text-gray-500">*EUR-i</span> või <span class="italic text-gray-500">*euri</span>. Lühend EUR sobib üksnes valuutatabelitesse. Tekstis, kus muust valuutast ei räägita, on sobiv sõna <span class="font-bold italic text-green-500">euro</span> või tähis <span class="font-bold italic text-green-500">€</span> (nt sidumata tekstis sh hinnakirjas, tabelipeas).</p>
+<h2>Arvukirjutus</h2>
+<p><strong>Numbrid ühest kümneni kirjutatakse jooksvas tekstis sõnadega</strong>, v.a statistikatekstides või muudes arvurikastes tekstides, samuti siis, kui vähemalt üks arv on komakohaga.</p>
+<p><strong>Arvu ja mõõtühiku vahel on tühik</strong> (nt <span class="font-bold italic text-green-500">2 tk</span>, <span class="font-bold italic text-green-500">3 lk</span>).</p>
+<p><strong>Arvu ees asuvad miinus- ja plussmärk on tühikuta</strong> (nt <span class="font-bold italic text-green-500">-35</span>, <span class="font-bold italic text-green-500">+1</span>).</p>
+<p><strong>Kui tabel sisaldab ainult kuni neljakohalisi arve, siis numbreid ei rühmitata.</strong> Seda tehakse alates viiekohalistest arvudest tagantpoolt kolmekaupa.</p>
+<div class="flex space-x-14">
+<table>
+<thead>
+<tr>
+<th>Liik</th>
+<th style="text-align:right">Päringute arv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hooned ja kinnistud</td>
+<td style="text-align:right">2793</td>
+</tr>
+<tr>
+<td>Suguvõsauuringud</td>
+<td style="text-align:right">1305</td>
+</tr>
+<tr>
+<td>Kodakondsuse taotlemine</td>
+<td style="text-align:right">926</td>
+</tr>
+<tr>
+<td>Pärimismenetlus</td>
+<td style="text-align:right">562</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Liik</th>
+<th style="text-align:right">Tellimuste arv</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Laenutus</td>
+<td style="text-align:right">32 727</td>
+</tr>
+<tr>
+<td>Koopia</td>
+<td style="text-align:right">9 331</td>
+</tr>
+<tr>
+<td>Siselaenutus</td>
+<td style="text-align:right">5 608</td>
+</tr>
+<tr>
+<td>Kauglaenutus</td>
+<td style="text-align:right">3 853</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Telefoninumbrite rühmitamist tuleb alustada tagantpoolt ja teha seda neljakaupa</strong> (nt <span class="font-bold italic text-green-500">744 1582</span>).</p>
+<p><strong>Kümnendmurdudes on korrektne kasutada koma</strong>, mitte punkti (nt <span class="font-bold italic text-green-500">10,2 meetrit</span>).</p>
+<p><strong>Vahemike märkimisel tuleb kasutada pikka kriipsu</strong>, mitte sidekriipsu. Kriipsu ette ja taha pole vaja tühikuid lisada (nt <span class="font-bold italic text-green-500">4000–6000</span>). Vahemikus kasutatavate näitajate ühikut ei ole vaja korrata (nt <span class="font-bold italic text-green-500">2–4%</span>).</p>
+<p><strong>Kellaaja kirjutamisel on õige panna tundide ja minutite vahele punkt</strong>, mitte koolon (nt <span class="font-bold italic text-green-500">10.15–10.30</span>). Kui ajavahemikus on üksnes täistunnid, ei ole nullide lisamine vajalik (nt <span class="font-bold italic text-green-500">Oleme lahti E–R 9–19</span>), aga kui näiteks ajakava sisaldab ka muul ajal algavaid ettevõtmisi, on ühtsuse mõttes hea lisada igale poole täistunni nullid:</p>
+<p><span class="font-bold italic text-green-500">10.00–12.00 Algus</span><br>
+<span class="font-bold italic text-green-500">12.00–12.45 Paus</span><br>
+<span class="font-bold italic text-green-500">12.45–13.45 Lõpp</span></p>
+<p><strong>Erandiks on tabelid, kus kuvatakse kuupäev koos kellaajaga.</strong> Seal tuleb tundide ja minutite vahel kasutada koolonit.</p>
+<table>
+<thead>
+<tr>
+<th>Koostatud</th>
+<th>Eesnimi</th>
+<th>Perekonnanimi</th>
+<th>Taotluse liik</th>
+<th>Päringu olek</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>20.01.2023 15:24</td>
+<td>Mart</td>
+<td>Tamm</td>
+<td>Sotsiaalkindlustus</td>
+<td>Saabunud</td>
+</tr>
+<tr>
+<td>20.01.2023 15:04</td>
+<td>Mare</td>
+<td>Kask</td>
+<td>Suguvõsauuringud</td>
+<td>Saabunud</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Üksinda asuvale araabia numbrile saab käändelõpu lisada alates ainsuse osastavast</strong> (v.a 1–4, millel ei ole ei omastava ega osastava käände tunnust). Käändetunnus tuleb lisada <strong>sidekriipsuga</strong> (nt <span class="font-bold italic text-green-500">11-lt</span>, <span class="font-bold italic text-green-500">31-l</span>, <span class="font-bold italic text-green-500">41-le</span>).</p>
+<p><strong>Kui arv kuulub sõnaühendisse ja ühildub käändes, siis numbrile käändetunnust ei lisata</strong> (nt <span class="font-bold italic text-green-500">30 tellimusele</span>). Kui tegemist on aga pikema sõnajadaga ja käändetunnusega sõna jääb arvust kaugele, võib numbrit täiendada käändetunnusega (nt <span class="font-bold italic text-green-500">30-le uurimissaali väljastatud tellimusele</span>).</p>
+<p><strong>Kui omadussõna on välja kirjutatud, tuleb see arvuga kokku siduda sidekriipsu abil</strong> (nt <span class="font-bold italic text-green-500">25-liikmeline</span>, <span class="font-bold italic text-green-500">125-leheküljeline</span>). Kui arvule järgnev ühik on aga lühendina esitatud, kirjutatakse see lahku (nt <span class="font-bold italic text-green-500">120 a raamat</span>). Teistmoodi käitub protsendimärk, mis jääb arvuga alati kokku (nt <span class="font-bold italic text-green-500">10% osakaal</span>).</p>
+<p><strong>Tehtemärkide ette ja taha jäetakse tühik</strong> (nt <span class="font-bold italic text-green-500">2 + 3 = 5</span>). Tuleb jälgida, et kasutusel oleks korrektne korrutusmärk (<span class="italic text-gray-500">*4 x 5</span> &gt; <span class="font-bold italic text-green-500">4 × 5</span>).</p>
+<h2>Kirjavahemärgid</h2>
+<h3>Punkt</h3>
+<p>Kui <strong>veebilingid ja meiliaadressid</strong> jäävad lause lõppu, käib lause lõppu ikka punkt: <span class="font-bold italic text-green-500">Lisateavet saab e-posti aadressilt eteatis@ra.ee. Vaata ka ra.ee.</span></p>
+<h3>Pikk kriips</h3>
+<p>Tänapäeva fondid sisaldavad mitmes pikkuses pikki kriipse (–, —), kuid nende eristamine ei ole õigekirja küsimus. <strong>Rahvusarhiivi rakendustes tuleb pika kriipsuna kasutada enn-kriipsu (–).</strong></p>
+<p>Pikka kriipsu kasutatakse arvu- ja ajavahemiku näitamiseks sõna kuni asemel, sealjuures ei lisata pika kriipsu ette ega taha tühikut.</p>
+<h3>Hüüumärk</h3>
+<p><strong>Hüüumärk on omal kohal käskude, soovide ja palvete väljendamisel</strong> (nt <span class="font-bold italic text-green-500">Tähelepanu! Lisage fail!</span>). Väitlause lõpus mõjub see ülepingutatult (nt <span class="italic text-gray-500">*Sisestatud turvakood ei ole õige!</span>).</p>
+<h3>Jutumärgid</h3>
+<p>Eestis on kasutatud mitmesuguse kujuga jutumärke:</p>
+<ul>
+<li>saksapärased „…“ – sagedasimad 1920.- 1930. aastate trükistes ja eelistatud alates 2013. aasta ÕS-ist</li>
+<li>prantsuse ja vene «…» – levisid Nõukogude Liidu ajal</li>
+<li>inglise “…” – hakkasid levima 1990. aastatest koos arvutikirjaga</li>
+<li>soome ”…” – hakkasid levima 1990. aastatest alates</li>
+<li>„…” – valiti 2006. aastal ilmunud ÕS-i tarbeks, sarnanevad käsitsi kirjutatutega (kasutatakse ka ungari, poola, rumeenia, serbia keeles)</li>
+</ul>
+<p>Standard soovitab, mitte ei käsi, ja kõige olulisem on kasutusühtlus. Rahvusarhiivi rakendustes on mõistlik kasutada <strong>standardklaviatuuri ühepoolseid jutumärke &quot;…&quot;.</strong></p>
+<p><strong>Arvutikäsklused ja veebilehel esitatavad rubriigid, sakid, nupud</strong> jms kirjutatakse jutumärkides, nt <span class="font-bold italic text-green-500">Klõpsake nupul &quot;Lisa&quot;. Tellimused kuvatakse jaotises &quot;Kinnitamata tellimused&quot;.</span></p>
+<h3>Kaldkriips</h3>
+<p><strong>Murdudes</strong> kirjutatakse kaldkriips <strong>tühikuteta</strong>: <span class="font-bold italic text-green-500">2/15</span>.</p>
+<p><strong>Jagamistehetes</strong> jäetakse <strong>mõlemale poole</strong> kaldkriipsu <strong>tühik</strong>: <span class="font-bold italic text-green-500">16 / 4 = 4</span>.</p>
+<p>Kui arvulise näitaja juures on <strong>ühikutest üks sõnaga välja kirjutatud, kaldkriipsu ei panda</strong>, nt <span class="italic text-gray-500">*15 tk/pakis</span> &gt; <span class="font-bold italic text-green-500">15 tk pakis</span>; <span class="italic text-gray-500">*40 eurot/tund</span> &gt; <span class="font-bold italic text-green-500">40 eurot tund</span>.</p>
+<p>Kui kaldkriips <strong>eristab üksiksõnu, ei eraldata seda tühikutega</strong>, nt <span class="font-bold italic text-green-500">ja/või</span>, <span class="font-bold italic text-green-500">linn/vald</span>, kui aga <strong>kasvõi ühel pool on mitu sõna, tuleb mõlemale poole kaldkriipsu jätta tühik</strong>, nt <span class="font-bold italic text-green-500">olen rahul / ei ole rahul</span>, <span class="font-bold italic text-green-500">ajavahemik / kuude arv</span>.</p>
+<h3>Euro tähis</h3>
+<p>Euro tähis kirjutatakse summa järele (nt <span class="font-bold italic text-green-500">34 €</span>).</p>
+<h2>Ühildumine</h2>
+<p><strong>Sõnadega kehtima, kehtima hakkama ja kehtestama ei tohi teha rektsioonivigu</strong>. Õige rektsioon on, et <span class="font-bold italic text-green-500">otsus kehtib alates 25. aprillist</span>, aga <span class="font-bold italic text-green-500">hakkab kehtima või kehtestatakse 25. aprillil</span>.</p>
+<p><strong>Veebiaadressi ei tohi lause lõpus jätta ühildamata</strong> (nt <span class="italic text-gray-500">*Täpsemaid juhiseid vaata ra.ee/vau</span>). Sellistes lausetes tuleb lisada lingitud aadressi ette sobivas käändes sõna (<span class="font-bold italic text-green-500">Täpsemaid juhiseid vaata aadressilt ra.ee/vau</span>) või linkida veebitekstis sobivas käändes sõna (<span class="font-bold italic text-green-500">Täpsemaid juhiseid vaata <u>virtuaalse uurimissaali</u> veebilehelt</span>).</p>
+
+          </article>
+        
+
+      </main>
+    </div>
+    <script>function showTooltip(e,o){e.trigger.className.includes("tooltipped")||(e.trigger.children[0].className="tooltipped tooltipped-s",e.trigger.children[0].ariaLabel=o)}window.addEventListener("load",()=>{var e=new ClipboardJS(".code-copy");e.on("success",e=>showTooltip(e,"Kopeeritud")),e.on("error",e=>showTooltip(e,"Kopeerimine ebaõnnestus"))});</script>
+<script async src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.js"></script>
+  </body>
+</html>
