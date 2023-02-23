@@ -65,7 +65,7 @@
 
 </header>
 
-    <div class="grid md:grid-cols-12 gap-2 m-2">
+    <div class="grid lg:grid-cols-12 gap-2 m-2">
       <aside class="md:col-span-3 p-4 bg-white rounded-sm shadow">
   <nav class="divide-y-2 divide-gray-200 sticky top-4">
 
@@ -104,10 +104,7 @@
       
       <ul class="space-y-1">
           <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/design-1/">Seda</a>
-          </li>
-          <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/design-2/">Teist</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/shadows/">Varjude kasutamine</a>
           </li>
       </ul>
     </section>
@@ -178,7 +175,7 @@
 
   </nav>
 </aside>
-      <main class="md:col-span-9 p-6 bg-white rounded-sm shadow">
+      <main class="lg:col-span-9 p-6 bg-white rounded-sm shadow">
 
         
           <article class="prose prose-lg max-w-5xl">
@@ -208,7 +205,7 @@
   </div>
   </div>
 </div>
-<div>
+<div class="mb-10">
   <h2 class="mt-8 mb-4">gray</h2>
   <div class="grid lg:grid-cols-10 md:grid-cols-6 grid-cols-4 gap-4">
   <div class="flex flex-col">
@@ -263,7 +260,7 @@
   </div>
   </div>
 </div>
-<div>
+<div class="mb-10">
   <h2 class="mt-8 mb-4">red</h2>
   <div class="grid lg:grid-cols-10 md:grid-cols-6 grid-cols-4 gap-4">
   <div class="flex flex-col">
@@ -318,7 +315,7 @@
   </div>
   </div>
 </div>
-<div>
+<div class="mb-10">
   <h2 class="mt-8 mb-4">yellow</h2>
   <div class="grid lg:grid-cols-10 md:grid-cols-6 grid-cols-4 gap-4">
   <div class="flex flex-col">
@@ -373,7 +370,7 @@
   </div>
   </div>
 </div>
-<div>
+<div class="mb-10">
   <h2 class="mt-8 mb-4">green</h2>
   <div class="grid lg:grid-cols-10 md:grid-cols-6 grid-cols-4 gap-4">
   <div class="flex flex-col">
@@ -428,7 +425,7 @@
   </div>
   </div>
 </div>
-<div>
+<div class="mb-10">
   <h2 class="mt-8 mb-4">blue</h2>
   <div class="grid lg:grid-cols-10 md:grid-cols-6 grid-cols-4 gap-4">
   <div class="flex flex-col">
@@ -483,33 +480,7 @@
   </div>
   </div>
 </div>
-<h2>Värvide määramine stiiliraamistikus &quot;Tailwind CSS&quot;</h2>
-<p>Värv määratakse klassiga, mille nimi koosneb kolmest osast, mis on eraldatud sidekriipsuga, näiteks <code>bg-gray-50</code>, kus <code>bg</code> on utiliidi nimi, <code>gray</code> värvi nimi ja <code>50</code> tooni kood.</p>
-<div class="space-y-6 my-12">
-  <input class="placeholder-gray-300 border border-gray-300 p-2" placeholder="placeholder-gray-300">
-  <p class="text-red-500">text-red-500</p>
-  <p class="bg-gray-50 p-2">bg-gray-50</p>
-  <p class="border border-green-500 p-2">border-green-500</p>
-  <div class="grid grid-cols-3 divide-x-4 divide-yellow-500">
-    <div class="bg-gray-50 p-2"></div>
-    <div class="bg-gray-50 p-2 text-center">divide-yellow-500</div>
-    <div class="bg-gray-50 p-2"></div>
-  </div>
-  <button class="rounded p-2 bg-blue-300 text-white text-center ring ring-blue-300 ring-offset-2 ring-offset-blue-100">ring-blue-300 ring-offset-blue-200</button>
-</div>
-
-<div style="position: relative">
-  <pre class="language-html"><code id="code-82"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>placeholder-gray-300 ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-red-500 ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>bg-gray-50 ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>border-green-500 ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>divide-yellow-500 ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ring-blue-300 ring-offset-blue-100 ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br></code></pre>
-
-  <button class="code-copy "
-    data-clipboard-target="#code-82"
-    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
-    <span>
-      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
-    </span>
-  </button>
-</div>
-<p>Loe täpsemalt <a href="https://tailwindcss.com/docs">dokumentatsioonist</a>.</p>
+<p>Värvide kasutamise kohta stiiliraamistikus &quot;Tailwind CSS&quot; loe täpsemalt <a href="https://tailwindcss.com/docs">dokumentatsioonist</a>.</p>
 
           </article>
         
