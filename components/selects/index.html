@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Valikukastid — Rahvusarhiivi disainisüsteem</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/themes/prism-ghcolors.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/19.1.1/tooltips.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/prism-themes/themes/prism-one-light.css" rel="stylesheet">
+
+    <style>
+      .tooltipped::before {
+        color: #fcf !important;
+        border-bottom-color: #ffccff !important;
+      }
+
+      .tooltipped::after {
+        background-color: #fcf !important;
+        color: #303 !important;
+      }
+    </style>
+
+    
+    <script>
+      function copy(el) {
+        navigator.clipboard.writeText(el.innerHTML);
+        el.nextElementSibling.textContent="Kopeeritud"
+        el.nextElementSibling.classList.remove("hidden");
+        setTimeout(function(){
+            el.nextElementSibling.classList.add("hidden");
+            el.nextElementSibling.textContent="Kopeeri"
+        }, 2000);
+      }
+    </script>
+
+  </head>
+  <body class="bg-gray-50">
+    <header class="m-2 bg-theme-ais rounded-sm shadow">
+  <div class="flex py-5 px-8 w-full items-center">
+
+    <img src="../../assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
+
+    <p class="border-l ml-4 pl-4 font-medium">
+      disainisüsteem
+    </p>
+
+    <div class="ml-auto space-x-3">
+      <!--<a href="#" class="font-bold underline">Link1</a>-->
+      <!--<a href="#" class="font-bold underline">Link2</a>-->
+    </div>
+  </div>
+
+</header>
+
+    <div class="grid lg:grid-cols-12 gap-2 m-2">
+      <aside class="md:col-span-3 p-4 bg-white rounded-sm shadow">
+  <nav class="divide-y-2 divide-gray-200 sticky top-4">
+
+    <section class="pb-3">
+      
+      <ul class="space-y-1">
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../">Sissejuhatus</a>
+          </li>
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../versioning/">Versioonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Toon, keel ja vorm</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/voice/">Pöördumine ja hääletoon</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/orthography/">Heakeelsus ja õigekeelsus</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/format/">Vormistus- ja vormindusvõtted</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Kasutajaliides ja -kogemus</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/shadows/">Varjude kasutamine</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/getting-started/">Seadistamine</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/border-radius/">Kumerused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/shadows/">Varjud</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/colors/">Värvid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/themes/">Teemad</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/spacing/">Astmik</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-face/">Kirjatüübid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-weight/">Kirjalaadid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-size/">Kirjasuurused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/typography/">Autotüpograafia</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Navigeerimine</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/links/">Lingid
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Vorm</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/text-inputs/">Sisestuskastid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50  bg-green-50 "
+              href="../../components/selects/">Valikukastid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/checkboxes/">Märkeruudud
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/radios/">Raadionupud
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/buttons/">Nupud
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Tagasiside</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/alerts/">Hoiatused ja teated
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/empty-states/">Tühiolekud
+            </a>
+          </li>
+      </ul>
+    </section>
+
+  </nav>
+</aside>
+      <main class="lg:col-span-9 p-6 bg-white rounded-sm shadow">
+
+        
+          <article class="prose prose-lg max-w-5xl">
+            <h1>Valikukastid</h1>
+<h3>Normaalsuuruses</h3>
+<h4>Tavapärane</h4>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<div>
+  <label for="location" class="block text-base font-semibold leading-6 text-gray-800 mb-2">Riik</label>
+  <select id="location" name="location" class="block w-full rounded py-3 px-4 text-gray-900 focus:outline-none focus:ring-2 sm:text-base sm:leading-6 border border-gray-200 hover:border-gray-300 focus:border-gray-500 focus:ring-green-300 focus:ring-green-300">
+    <option selected>Eesti</option>
+    <option>Rootsi</option>
+    <option>Saksamaa</option>
+  </select>
+</div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-11"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block text-base font-semibold leading-6 text-gray-800 mb-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Riik<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block w-full rounded py-3 px-4 text-gray-900 focus:outline-none focus:ring-2 sm:text-base sm:leading-6 border border-gray-200 hover:border-gray-300 focus:border-gray-500 focus:ring-green-300 focus:ring-green-300<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">selected</span><span class="token punctuation">></span></span>Eesti<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Rootsi<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Saksamaa<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-11"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+<h3>Kompaktsed</h3>
+<h4>Tavapärane</h4>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<div>
+  <label for="location2" class="block text-sm font-semibold leading-6 text-gray-800 mb-1">Riik</label>
+  <select id="location2" name="location" class="block w-full rounded py-1.5 px-3 text-gray-900 focus:outline-none focus:ring-2 sm:text-sm sm:leading-6 border border-gray-200 hover:border-gray-300 focus:border-gray-500 focus:ring-green-300 focus:ring-green-300">
+    <option selected>Eesti</option>
+    <option>Rootsi</option>
+    <option>Saksamaa</option>
+  </select>
+</div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-21"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block text-sm font-semibold leading-6 text-gray-800 mb-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Riik<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location2<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block w-full rounded py-1.5 px-3 text-gray-900 focus:outline-none focus:ring-2 sm:text-sm sm:leading-6 border border-gray-200 hover:border-gray-300 focus:border-gray-500 focus:ring-green-300 focus:ring-green-300<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">selected</span><span class="token punctuation">></span></span>Eesti<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Rootsi<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Saksamaa<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-21"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+
+          </article>
+        
+
+      </main>
+    </div>
+    <script>function showTooltip(e,o){e.trigger.className.includes("tooltipped")||(e.trigger.children[0].className="tooltipped tooltipped-s",e.trigger.children[0].ariaLabel=o)}window.addEventListener("load",()=>{var e=new ClipboardJS(".code-copy");e.on("success",e=>showTooltip(e,"Kopeeritud")),e.on("error",e=>showTooltip(e,"Kopeerimine ebaõnnestus"))});</script>
+<script async src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.js"></script>
+
+  </body>
+</html>

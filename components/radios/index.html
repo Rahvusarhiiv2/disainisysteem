@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kumerused — Rahvusarhiivi disainisüsteem</title>
+    <title>Raadionupud — Rahvusarhiivi disainisüsteem</title>
 
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/themes/prism-ghcolors.css" />
@@ -130,7 +130,7 @@
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/getting-started/">Seadistamine</a>
           </li>
           <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50  bg-green-50 " href="../../classes/border-radius/">Kumerused</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/border-radius/">Kumerused</a>
           </li>
           <li>
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/shadows/">Varjud</a>
@@ -196,7 +196,7 @@
           </li>
           <li>
             <a
-              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50  bg-green-50 "
               href="../../components/radios/">Raadionupud
             </a>
           </li>
@@ -232,52 +232,56 @@
 
         
           <article class="prose prose-lg max-w-5xl">
-            <h1>Kumerused</h1>
-<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi kumerusi</p>
-<table>
-<thead>
-<tr>
-<th>Klass</th>
-<th>Omadus</th>
-<th>Soovitus</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>rounded-sm</td>
-<td>border-radius: 0.25rem; /* 4px */</td>
-<td>väikeste elementide jaoks (nupud, sildid jne)</td>
-</tr>
-<tr>
-<td>rounded</td>
-<td>border-radius: 0.5rem; /* 8px */</td>
-<td>keskmiste ja suurte elementide jaoks (menüüd, pisipildid, hüpikaknad, jne)</td>
-</tr>
-<tr>
-<td>rounded-full</td>
-<td>border-radius: 9999px;</td>
-<td>ümmarguste elementide jaoks</td>
-</tr>
-</tbody>
-</table>
-<div class="flex space-x-10 my-20">
-  <div class="flex items-center justify-center text-sm w-52 h-36 rounded-sm border border-black select-all">rounded-sm</div>
-  <div class="flex items-center justify-center text-sm w-52 h-36 rounded border border-black select-all">rounded</div>
-  <div class="flex items-center justify-center text-sm w-36 h-36 rounded-full border border-black select-all">rounded-full</div>
+            <h1>Raadionupud</h1>
+<h3>Sildiga</h3>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<div>
+  <input id="digitized" name="digitized" type="radio" class="h-4 w-4 text-green-500 focus:ring-offset-0 focus:ring-2 border-gray-200 hover:border-gray-300 focus:border-gray-500 focus:ring-green-300 focus:ring-green-300">
+  <label for="digitized" class="ml-3 text-base leading-6 text-gray-800">Digiteeritud</label>
 </div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
 
 <div style="position: relative">
-  <pre class="language-html"><code id="code-55"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-sm ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>rounded-full ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+  <pre class="language-html"><code id="code-8"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>digitized<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>digitized<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4 text-green-500 focus:ring-offset-0 focus:ring-2 border-gray-200 hover:border-gray-300 focus:border-gray-500 focus:ring-green-300 focus:ring-green-300<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>digitized<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ml-3 text-base leading-6 text-gray-800<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Digiteeritud<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
 
   <button class="code-copy "
-    data-clipboard-target="#code-55"
+    data-clipboard-target="#code-8"
     style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
     <span>
       <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
     </span>
   </button>
 </div>
-<p>NB! Kumerusi on võimalik määrata ka nurkade ja servade kaupa! Loe selle kohta <a href="https://tailwindcss.com/docs/border-radius#rounding-sides-separately">dokumentatsioonist</a>.</p>
+</details>
+<h3>Kirjeldusega</h3>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<div class="flex items-start">
+  <div class="flex h-7 items-center">
+    <input id="digitized2" name="digitized" type="radio" class="h-4 w-4 text-green-500 focus:ring-offset-0 focus:ring-2 border-gray-200 hover:border-gray-300 focus:border-gray-500 focus:ring-green-300 focus:ring-green-300">
+  </div>
+  <div class="ml-3 leading-7">
+    <label for="digitized2" class="text-gray-800 text-base">Digiteeritud</label>
+    <p class="text-gray-500 text-sm">Otsi ainult digiteeritud allikate hulgast.</p>
+  </div>
+</div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-15"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-start<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex h-7 items-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>digitized2<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>digitized<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4 text-green-500 focus:ring-offset-0 focus:ring-2 border-gray-200 hover:border-gray-300 focus:border-gray-500 focus:ring-green-300 focus:ring-green-300<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ml-3 leading-7<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>digitized2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-gray-800 text-base<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Digiteeritud<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-gray-500 text-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Otsi ainult digiteeritud allikate hulgast.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-15"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
 
           </article>
         

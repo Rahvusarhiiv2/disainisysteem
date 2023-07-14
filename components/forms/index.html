@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Vormielemendid — Rahvusarhiivi disainisüsteem</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/themes/prism-ghcolors.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/19.1.1/tooltips.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/prism-themes/themes/prism-one-light.css" rel="stylesheet">
+
+    
+    
+
+    <style>
+      .tooltipped::before {
+        color: #fcf !important;
+        border-bottom-color: #ffccff !important;
+      }
+
+      .tooltipped::after {
+        background-color: #fcf !important;
+        color: #303 !important;
+      }
+    </style>
+
+    
+    <script>
+      function copy(el) {
+        navigator.clipboard.writeText(el.innerHTML);
+        el.nextElementSibling.textContent="Kopeeritud"
+        el.nextElementSibling.classList.remove("hidden");
+        setTimeout(function(){
+            el.nextElementSibling.classList.add("hidden");
+            el.nextElementSibling.textContent="Kopeeri"
+        }, 2000);
+      }
+    </script>
+
+  </head>
+  <body class="bg-gray-50">
+    <header class="m-2 bg-theme-ais rounded-sm shadow">
+  <div class="flex py-5 px-8 w-full items-center">
+
+    <img src="../../assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
+
+    <p class="border-l ml-4 pl-4 font-medium">
+      disainisüsteem
+    </p>
+
+    <div class="ml-auto space-x-3">
+      <!--<a href="#" class="font-bold underline">Link1</a>-->
+      <!--<a href="#" class="font-bold underline">Link2</a>-->
+    </div>
+  </div>
+
+</header>
+
+    <div class="grid lg:grid-cols-12 gap-2 m-2">
+      <aside class="md:col-span-3 p-4 bg-white rounded-sm shadow">
+  <nav class="divide-y-2 divide-gray-200 sticky top-4">
+
+    <section class="pb-3">
+      
+      <ul class="space-y-1">
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../">Sissejuhatus</a>
+          </li>
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../versioning/">Versioonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Toon, keel ja vorm</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/voice/">Pöördumine ja hääletoon</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/orthography/">Heakeelsus ja õigekeelsus</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/format/">Vormistus- ja vormindusvõtted</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Kasutajaliides ja -kogemus</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/shadows/">Varjude kasutamine</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/getting-started/">Seadistamine</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/border-radius/">Kumerused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/shadows/">Varjud</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/colors/">Värvid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/themes/">Teemad</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/spacing/">Astmik</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-face/">Kirjatüübid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-weight/">Kirjalaadid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-size/">Kirjasuurused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/typography/">Autotüpograafia</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Navigeerimine</h3>
+      
+      <ul class="mb-4">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/links/">Lingid
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Vorm</h3>
+      
+      <ul class="mb-4">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50  bg-green-50 "
+              href="../../components/forms/">Vormielemendid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/buttons/">Nupud
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Tagasiside</h3>
+      
+      <ul class="mb-4">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/alerts/">Hoiatused ja teated
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/empty-states/">Tühiolekud
+            </a>
+          </li>
+      </ul>
+    </section>
+
+  </nav>
+</aside>
+      <main class="lg:col-span-9 p-6 bg-white rounded-sm shadow">
+
+        
+          <article class="prose prose-lg max-w-5xl">
+            <h1>Vormielemendid</h1>
+<div class="flex items-center rounded p-2 mb-3 bg-gray-100/50 text-gray-900/50 text-sm">
+      <div class="shrik-0">
+        <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <g><g><rect height="8.48" transform="matrix(0.7071 -0.7071 0.7071 0.7071 -6.8717 17.6255)" width="3" x="16.34" y="12.87"/><path d="M17.5,10c1.93,0,3.5-1.57,3.5-3.5c0-0.58-0.16-1.12-0.41-1.6l-2.7,2.7L16.4,6.11l2.7-2.7C18.62,3.16,18.08,3,17.5,3 C15.57,3,14,4.57,14,6.5c0,0.41,0.08,0.8,0.21,1.16l-1.85,1.85l-1.78-1.78l0.71-0.71L9.88,5.61L12,3.49 c-1.17-1.17-3.07-1.17-4.24,0L4.22,7.03l1.41,1.41H2.81L2.1,9.15l3.54,3.54l0.71-0.71V9.15l1.41,1.41l0.71-0.71l1.78,1.78 l-7.41,7.41l2.12,2.12L16.34,9.79C16.7,9.92,17.09,10,17.5,10z"/></g></g>
+        </svg>
+      </div>
+      <div class="px-2"><em>TODO</em></div>
+      <div class="ml-3">
+'Disabled' staatus lisab valdavalt kõigile elementide osadele: opacity-20 pointer-events-none
+</div>
+    </div>
+<h3>Tekstiväljad</h3>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<div>
+  <label for="name1" class="block font-bold">Nimi</label>
+  <div class="mt-2">
+    <input type="text" name="nimi" id="name1" placeholder="Jane Doe"
+           class="block w-full rounded px-4 py-2.5 border-gray-300 text-gray-900"
+    >
+  </div>
+  <p class="mt-2 text-sm text-gray-900">Abiteksti ja teavituse koht</p>
+</div>
+<div class="mt-2">
+  <label for="leidandmed1" class="block font-bold">Leidandmed</label>
+  <div class="relative mt-2">
+    <!-- tooltip needs additional JS for actions and triggering -->
+    <div class="absolute inset-y-0 right-4 flex items-center justify-center">
+      <div class="h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50">
+        <svg class="relative" viewBox="0 0 24 24" fill="currentColor"
+             aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z"/>
+        </svg>
+      </div>
+    </div>
+    <input type="text" name="reference" id="leidandmed1" placeholder="EAA.21.1-1.32fk"
+           class="block w-full rounded px-4 py-2.5 pr-12 border-gray-300"
+    >
+  </div>
+</div>
+<div class="mt-2">
+  <label for="email1" class="block font-bold">Email</label>
+  <div class="relative mt-2">
+    <!-- tooltip needs additional JS for actions and triggering -->
+    <div class="absolute inset-y-0 right-4 flex items-center gap-x-2">
+      <div class="h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50">
+        <svg class="relative" viewBox="0 0 24 24" fill="currentColor"
+             aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z"/>
+        </svg>
+      </div>
+    </div>
+    <div>
+      <input type="email" name="email" id="email1"
+             placeholder="you@example.com" value="asdf" aria-invalid="true" aria-describedby="email-error"
+             class="peer block w-full rounded px-4 py-2.5 pr-12 border-gray-300"
+      >
+      <div class="invisible peer-invalid:visible absolute inset-y-0 right-12 flex items-center justify-center">
+        <div class="h-6 w-6 rounded-full">
+          <svg class="relative text-red-500" viewBox="0 0 24 24" fill="currentColor"
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 15h2v2h-2v-2zm0-8h2v6h-2V7zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="mt-2 text-sm">Abiteksti ja teavituse koht</p>
+  <p class="mt-2 text-sm text-red-500" id="email-error">Vigane meiliaadress</p> <!-- requires extra JS -->
+</div>
+<div class="mt-2">
+  <label for="about1" class="block font-bold">Ülevaade</label>
+  <div class="relative mt-2">
+    <div>
+      <textarea name="about" id="about1" placeholder="Lorem ipsum"
+                aria-invalid="true" aria-describedby="about1-error"
+                class="block w-full rounded px-4 py-2.5 pr-8 border-gray-300"
+      ></textarea>
+    </div>
+    <div class="absolute top-2 right-4 flex items-center gap-x-2">
+      <div class="h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50">
+        <svg class="relative" viewBox="0 0 24 24" fill="currentColor"
+             aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <p class="mt-2 text-sm">Lühike ülevaatlik informatsioon</p>
+</div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-9"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block font-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Nimi<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nimi<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name1<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Jane Doe<span class="token punctuation">"</span></span><br>           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block w-full rounded px-4 py-2.5 border-gray-300 text-gray-900<span class="token punctuation">"</span></span><br>    <span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2 text-sm text-gray-900<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Abiteksti ja teavituse koht<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>leidandmed1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block font-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Leidandmed<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative mt-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!-- tooltip needs additional JS for actions and triggering --></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>absolute inset-y-0 right-4 flex items-center justify-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><br>             <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><br>            <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>reference<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>leidandmed1<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>EAA.21.1-1.32fk<span class="token punctuation">"</span></span><br>           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block w-full rounded px-4 py-2.5 pr-12 border-gray-300<span class="token punctuation">"</span></span><br>    <span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block font-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Email<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative mt-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!-- tooltip needs additional JS for actions and triggering --></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>absolute inset-y-0 right-4 flex items-center gap-x-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><br>             <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><br>            <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email1<span class="token punctuation">"</span></span><br>             <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>you@example.com<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>asdf<span class="token punctuation">"</span></span> <span class="token attr-name">aria-invalid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email-error<span class="token punctuation">"</span></span><br>             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>peer block w-full rounded px-4 py-2.5 pr-12 border-gray-300<span class="token punctuation">"</span></span><br>      <span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>invisible peer-invalid:visible absolute inset-y-0 right-12 flex items-center justify-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-6 w-6 rounded-full<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative text-red-500<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><br>               <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><br>              <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M11 15h2v2h-2v-2zm0-8h2v6h-2V7zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2 text-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Abiteksti ja teavituse koht<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2 text-sm text-red-500<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email-error<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Vigane meiliaadress<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- requires extra JS --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block font-bold<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Ülevaade<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative mt-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about1<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Lorem ipsum<span class="token punctuation">"</span></span><br>                <span class="token attr-name">aria-invalid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about1-error<span class="token punctuation">"</span></span><br>                <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block w-full rounded px-4 py-2.5 pr-8 border-gray-300<span class="token punctuation">"</span></span><br>      <span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>absolute top-2 right-4 flex items-center gap-x-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><br>             <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><br>            <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2 text-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Lühike ülevaatlik informatsioon<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-9"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+<h4>Väikesed tekstiväljad</h4>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<div>
+  <label for="name2" class="block font-bold text-sm">Nimi</label>
+  <div class="mt-1">
+    <input type="text" name="nimi" id="name2" placeholder="Jane Doe"
+           class="block w-full rounded px-3 py-2 border-gray-300 text-gray-900 text-sm placeholder:text-sm"
+    >
+  </div>
+  <p class="mt-1 text-xs">Abiteksti ja teavituse koht</p>
+</div>
+<div class="mt-1">
+  <label for="leidandmed2" class="block font-bold text-sm">Leidandmed</label>
+  <div class="relative mt-1">
+    <!-- tooltip needs additional JS for actions and triggering -->
+    <div class="absolute inset-y-0 right-3 flex items-center justify-center">
+      <div class="h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50">
+        <svg class="relative" viewBox="0 0 24 24" fill="currentColor"
+             aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z"/>
+        </svg>
+      </div>
+    </div>
+    <input type="text" name="reference" id="leidandmed2" placeholder="EAA.21.1-1.32fk"
+           class="block w-full rounded px-3 py-22 pr-12 border-gray-300 text-sm placeholder:text-sm"
+    >
+  </div>
+</div>
+<div class="mt-1">
+  <label for="email2" class="block font-bold text-sm">Email</label>
+  <div class="relative mt-1">
+    <!-- tooltip needs additional JS for actions and triggering -->
+    <div class="absolute inset-y-0 right-3 flex items-center gap-x-2">
+      <div class="h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50">
+        <svg class="relative" viewBox="0 0 24 24" fill="currentColor"
+             aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z"/>
+        </svg>
+      </div>
+    </div>
+    <div>
+      <input type="email" name="email" id="email2"
+             placeholder="you@example.com" value="asdf" aria-invalid="true" aria-describedby="email-error"
+             class="peer block w-full rounded px-3 py-2 pr-9 border-gray-300 text-sm placeholder:text-sm"
+      >
+      <div class="invisible peer-invalid:visible absolute inset-y-0 right-10 flex items-center justify-center">
+        <div class="h-4 w-4 rounded-full">
+          <svg class="relative text-red-500" viewBox="0 0 24 24" fill="currentColor"
+               aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M11 15h2v2h-2v-2zm0-8h2v6h-2V7zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"/>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+  <p class="mt-1 text-xs">Abiteksti ja teavituse koht</p>
+  <p class="mt-1 text-xs text-red-500" id="email-error">Vigane meiliaadress</p> <!-- requires extra JS -->
+</div>
+<div class="mt-1">
+  <label for="about2" class="block font-bold text-sm">Ülevaade</label>
+  <div class="relative mt-1">
+    <div>
+      <textarea name="about" id="about2" placeholder="Lorem ipsum"
+                aria-invalid="true" aria-describedby="about1-error"
+                class="block w-full rounded px-3 py-2 pr-6 border-gray-300 text-sm placeholder:text-sm"
+      ></textarea>
+    </div>
+    <div class="absolute top-2 right-4 flex items-center gap-x-2">
+      <div class="h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50">
+        <svg class="relative" viewBox="0 0 24 24" fill="currentColor"
+             aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z"></path>
+        </svg>
+      </div>
+    </div>
+  </div>
+  <p class="mt-1 text-xs">Lühike ülevaatlik informatsioon</p>
+</div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-16"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block font-bold text-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Nimi<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>nimi<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>name2<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Jane Doe<span class="token punctuation">"</span></span><br>           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block w-full rounded px-3 py-2 border-gray-300 text-gray-900 text-sm placeholder:text-sm<span class="token punctuation">"</span></span><br>    <span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-1 text-xs<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Abiteksti ja teavituse koht<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>leidandmed2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block font-bold text-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Leidandmed<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative mt-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!-- tooltip needs additional JS for actions and triggering --></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>absolute inset-y-0 right-3 flex items-center justify-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><br>             <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><br>            <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>reference<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>leidandmed2<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>EAA.21.1-1.32fk<span class="token punctuation">"</span></span><br>           <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block w-full rounded px-3 py-22 pr-12 border-gray-300 text-sm placeholder:text-sm<span class="token punctuation">"</span></span><br>    <span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block font-bold text-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Email<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative mt-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token comment">&lt;!-- tooltip needs additional JS for actions and triggering --></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>absolute inset-y-0 right-3 flex items-center gap-x-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><br>             <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><br>            <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email2<span class="token punctuation">"</span></span><br>             <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>you@example.com<span class="token punctuation">"</span></span> <span class="token attr-name">value</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>asdf<span class="token punctuation">"</span></span> <span class="token attr-name">aria-invalid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email-error<span class="token punctuation">"</span></span><br>             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>peer block w-full rounded px-3 py-2 pr-9 border-gray-300 text-sm placeholder:text-sm<span class="token punctuation">"</span></span><br>      <span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>invisible peer-invalid:visible absolute inset-y-0 right-10 flex items-center justify-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4 rounded-full<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative text-red-500<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><br>               <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><br>              <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M11 15h2v2h-2v-2zm0-8h2v6h-2V7zm.99-5C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-1 text-xs<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Abiteksti ja teavituse koht<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-1 text-xs text-red-500<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>email-error<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Vigane meiliaadress<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span> <span class="token comment">&lt;!-- requires extra JS --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block font-bold text-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Ülevaade<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative mt-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>textarea</span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about<span class="token punctuation">"</span></span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about2<span class="token punctuation">"</span></span> <span class="token attr-name">placeholder</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>Lorem ipsum<span class="token punctuation">"</span></span><br>                <span class="token attr-name">aria-invalid</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>about1-error<span class="token punctuation">"</span></span><br>                <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block w-full rounded px-3 py-2 pr-6 border-gray-300 text-sm placeholder:text-sm<span class="token punctuation">"</span></span><br>      <span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>textarea</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>absolute top-2 right-4 flex items-center gap-x-2<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-6 w-6 p-1 rounded-full bg-gray-50 hover:ring-4 hover:ring-gray-50<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><br>             <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span><br>            <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M11 18H13V16H11V18ZM12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20ZM12 6C9.79 6 8 7.79 8 10H10C10 8.9 10.9 8 12 8C13.1 8 14 8.9 14 10C14 12 11 11.75 11 15H13C13 12.75 16 12.5 16 10C16 7.79 14.21 6 12 6Z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-1 text-xs<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Lühike ülevaatlik informatsioon<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-16"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+<h3>Valikuväljad</h3>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<fieldset>
+  <legend class="sr-only">Ainult digiteeritud säilikud</legend>
+  <div class="relative flex items-start">
+    <div class="flex h-6 items-center">
+      <input id="dgs" aria-describedby="digitized-objects" name="digitized" type="checkbox"
+             class="h-4 w-4 rounded-xs disabled:opacity-20 disabled:pointer-events-none">
+    </div>
+    <div class="ml-3 text-sm leading-6">
+      <label for="dgs" class="font-medium">Ainult digiteeritud säilikud</label>
+      <p id="comments-description" class="text-gray-500">Näita otsitulemustes ainult digiteeritud kirjeldusüksuseid</p>
+    </div>
+  </div>
+</fieldset>
+<fieldset class="mt-4">
+  <legend class="sr-only">Asukoht</legend>
+  <div class="space-y-4">
+    <div class="flex items-center">
+      <input id="tallinn" name="location" type="radio" checked class="h-4 w-4">
+      <label for="tallinn" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Tallinn</label>
+    </div>
+    <div class="flex items-center">
+      <input id="tartu" name="location" type="radio" class="h-4 w-4">
+      <label for="tartu" class="ml-3 block text-sm font-medium leading-6 text-gray-900">Tartu</label>
+    </div>
+  </div>
+</fieldset>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-23"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fieldset</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>legend</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Ainult digiteeritud säilikud<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>legend</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>relative flex items-start<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex h-6 items-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dgs<span class="token punctuation">"</span></span> <span class="token attr-name">aria-describedby</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>digitized-objects<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>digitized<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>checkbox<span class="token punctuation">"</span></span><br>             <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4 rounded-xs disabled:opacity-20 disabled:pointer-events-none<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ml-3 text-sm leading-6<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>dgs<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-medium<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Ainult digiteeritud säilikud<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>comments-description<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-gray-500<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Näita otsitulemustes ainult digiteeritud kirjeldusüksuseid<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fieldset</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>fieldset</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>legend</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>sr-only<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Asukoht<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>legend</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>space-y-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tallinn<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">checked</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tallinn<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ml-3 block text-sm font-medium leading-6 text-gray-900<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Tallinn<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>input</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tartu<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>location<span class="token punctuation">"</span></span> <span class="token attr-name">type</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>radio<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>tartu<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>ml-3 block text-sm font-medium leading-6 text-gray-900<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Tartu<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>fieldset</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-23"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+<h4>Menüüvalikud</h4>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<!-- Simple native -->
+<div class="flex flex-wrap items-center justify-center gap-4">
+  <div class="grow">
+    <label for="country1" class="block font-medium">Riik</label>
+    <select id="country1" name="country2" class="mt-2 block w-full rounded border-gray-300 px-4 py-2.5 pr-10">
+      <option>Eesti</option>
+      <option selected>Rootsi</option>
+      <option>Saksamaa</option>
+    </select>
+  </div>
+  <div class="grow">
+    <label for="country2" class="block text-sm font-medium">Riik</label>
+    <select id="country2" name="country2" class="mt-2 block w-full rounded border-gray-300 px-3 py-2 pr-10 text-sm">
+      <option>Eesti</option>
+      <option selected>Rootsi</option>
+      <option>Saksamaa</option>
+    </select>
+  </div>
+</div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-30"class="language-html"><span class="token comment">&lt;!-- Simple native --></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex flex-wrap items-center justify-center gap-4<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>grow<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>country1<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block font-medium<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Riik<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>country1<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>country2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2 block w-full rounded border-gray-300 px-4 py-2.5 pr-10<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Eesti<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">selected</span><span class="token punctuation">></span></span>Rootsi<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Saksamaa<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>grow<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>label</span> <span class="token attr-name">for</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>country2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>block text-sm font-medium<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Riik<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>label</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>select</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>country2<span class="token punctuation">"</span></span> <span class="token attr-name">name</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>country2<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>mt-2 block w-full rounded border-gray-300 px-3 py-2 pr-10 text-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Eesti<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span> <span class="token attr-name">selected</span><span class="token punctuation">></span></span>Rootsi<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>option</span><span class="token punctuation">></span></span>Saksamaa<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>option</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>select</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-30"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+
+          </article>
+        
+
+      </main>
+    </div>
+    <script>function showTooltip(e,o){e.trigger.className.includes("tooltipped")||(e.trigger.children[0].className="tooltipped tooltipped-s",e.trigger.children[0].ariaLabel=o)}window.addEventListener("load",()=>{var e=new ClipboardJS(".code-copy");e.on("success",e=>showTooltip(e,"Kopeeritud")),e.on("error",e=>showTooltip(e,"Kopeerimine ebaõnnestus"))});</script>
+<script async src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.js"></script>
+
+    
+    
+
+  </body>
+</html>

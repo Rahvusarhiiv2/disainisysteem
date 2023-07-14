@@ -1,0 +1,417 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Lingid — Rahvusarhiivi disainisüsteem</title>
+
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/themes/prism-ghcolors.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/19.1.1/tooltips.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/prism-themes/themes/prism-one-light.css" rel="stylesheet">
+
+    <style>
+      .tooltipped::before {
+        color: #fcf !important;
+        border-bottom-color: #ffccff !important;
+      }
+
+      .tooltipped::after {
+        background-color: #fcf !important;
+        color: #303 !important;
+      }
+    </style>
+
+    
+    <script>
+      function copy(el) {
+        navigator.clipboard.writeText(el.innerHTML);
+        el.nextElementSibling.textContent="Kopeeritud"
+        el.nextElementSibling.classList.remove("hidden");
+        setTimeout(function(){
+            el.nextElementSibling.classList.add("hidden");
+            el.nextElementSibling.textContent="Kopeeri"
+        }, 2000);
+      }
+    </script>
+
+  </head>
+  <body class="bg-gray-50">
+    <header class="m-2 bg-theme-ais rounded-sm shadow">
+  <div class="flex py-5 px-8 w-full items-center">
+
+    <img src="../../assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
+
+    <p class="border-l ml-4 pl-4 font-medium">
+      disainisüsteem
+    </p>
+
+    <div class="ml-auto space-x-3">
+      <!--<a href="#" class="font-bold underline">Link1</a>-->
+      <!--<a href="#" class="font-bold underline">Link2</a>-->
+    </div>
+  </div>
+
+</header>
+
+    <div class="grid lg:grid-cols-12 gap-2 m-2">
+      <aside class="md:col-span-3 p-4 bg-white rounded-sm shadow">
+  <nav class="divide-y-2 divide-gray-200 sticky top-4">
+
+    <section class="pb-3">
+      
+      <ul class="space-y-1">
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../">Sissejuhatus</a>
+          </li>
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../versioning/">Versioonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Toon, keel ja vorm</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/voice/">Pöördumine ja hääletoon</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/orthography/">Heakeelsus ja õigekeelsus</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../language/format/">Vormistus- ja vormindusvõtted</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Kasutajaliides ja -kogemus</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../design/shadows/">Varjude kasutamine</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/getting-started/">Seadistamine</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/border-radius/">Kumerused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/shadows/">Varjud</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/colors/">Värvid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/themes/">Teemad</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/spacing/">Astmik</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-face/">Kirjatüübid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-weight/">Kirjalaadid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-size/">Kirjasuurused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/typography/">Autotüpograafia</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Navigeerimine</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50  bg-green-50 "
+              href="../../components/links/">Lingid
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Vorm</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/text-inputs/">Sisestuskastid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/selects/">Valikukastid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/checkboxes/">Märkeruudud
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/radios/">Raadionupud
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/buttons/">Nupud
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Tagasiside</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/alerts/">Hoiatused ja teated
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/empty-states/">Tühiolekud
+            </a>
+          </li>
+      </ul>
+    </section>
+
+  </nav>
+</aside>
+      <main class="lg:col-span-9 p-6 bg-white rounded-sm shadow">
+
+        
+          <article class="prose prose-lg max-w-5xl">
+            <h1>Lingid</h1>
+<h3>Tekstisisene</h3>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<div class="flex items-center space-x-10">
+  <a href="#" class="text-sm font-medium text-blue-600 no-underline
+    hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700"
+  >
+    Small Link
+  </a>
+  <a href="#" class="text-base font-medium text-blue-600 no-underline
+    hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700"
+  >
+    Base Link
+  </a>
+  <a href="#" class="text-lg font-medium text-blue-600 no-underline
+    hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700"
+  >
+    Large Link
+  </a>
+</div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-8"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center space-x-10<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-sm font-medium text-blue-600 no-underline<br>    hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700<span class="token punctuation">"</span></span><br>  <span class="token punctuation">></span></span><br>    Small Link<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-base font-medium text-blue-600 no-underline<br>    hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700<span class="token punctuation">"</span></span><br>  <span class="token punctuation">></span></span><br>    Base Link<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>text-lg font-medium text-blue-600 no-underline<br>    hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700<span class="token punctuation">"</span></span><br>  <span class="token punctuation">></span></span><br>    Large Link<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-8"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+<h3>Tekstisisene ikooniga</h3>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<div class="flex items-center space-x-10">
+  <a href="#" class="inline-flex flex-nowrap items-center text-sm
+    font-medium text-blue-600 no-underline hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700"
+  >
+    Small Link
+    <svg class="h-3 w-3 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"></path>
+    </svg>
+  </a>
+  <a href="#" class="inline-flex flex-nowrap items-center text-base
+    font-medium text-blue-600 no-underline hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700"
+  >
+    Base Link
+    <svg class="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"></path>
+    </svg>
+  </a>
+  <a href="#" class="inline-flex flex-nowrap items-center text-lg
+    font-medium text-blue-600 no-underline hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700"
+  >
+    Large Link
+    <svg class="h-5 w-5 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+      <path d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"></path>
+    </svg>
+  </a>
+</div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-15"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center space-x-10<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex flex-nowrap items-center text-sm<br>    font-medium text-blue-600 no-underline hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700<span class="token punctuation">"</span></span><br>  <span class="token punctuation">></span></span><br>    Small Link<br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-3 w-3 ml-1<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex flex-nowrap items-center text-base<br>    font-medium text-blue-600 no-underline hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700<span class="token punctuation">"</span></span><br>  <span class="token punctuation">></span></span><br>    Base Link<br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4 ml-1<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>#<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex flex-nowrap items-center text-lg<br>    font-medium text-blue-600 no-underline hover:text-blue-500 hover:focus:active:underline focus:active:text-blue-700<span class="token punctuation">"</span></span><br>  <span class="token punctuation">></span></span><br>    Large Link<br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-5 w-5 ml-1<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-15"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+<h3>Nupulaadne</h3>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<a class="
+    inline-flex flex-nowrap items-center py-2 text-sm px-4
+    font-medium text-sm text-center text-blue-600 bg-transparent rounded cursor-pointer border-none
+    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10
+">
+  Small Link
+</a>
+<a class="
+    inline-flex flex-nowrap items-center py-3 px-4
+    font-medium text-base text-center text-blue-600 bg-transparent rounded cursor-pointer border-none
+    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10
+">
+  Base Link
+</a>
+<a class="
+    inline-flex flex-nowrap items-center py-4 px-6
+    font-medium text-lg text-center text-blue-600 bg-transparent rounded cursor-pointer border-none
+    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10
+">
+  Large Link
+</a>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-22"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>    inline-flex flex-nowrap items-center py-2 text-sm px-4<br>    font-medium text-sm text-center text-blue-600 bg-transparent rounded cursor-pointer border-none<br>    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300<br>    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10<br><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  Small Link<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>    inline-flex flex-nowrap items-center py-3 px-4<br>    font-medium text-base text-center text-blue-600 bg-transparent rounded cursor-pointer border-none<br>    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300<br>    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10<br><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  Base Link<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>    inline-flex flex-nowrap items-center py-4 px-6<br>    font-medium text-lg text-center text-blue-600 bg-transparent rounded cursor-pointer border-none<br>    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300<br>    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10<br><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  Large Link<br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-22"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+<h3>Nupulaadne ikooniga</h3>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 ">
+<a class="
+    inline-flex flex-nowrap items-center py-2 text-sm px-4
+    font-medium text-sm text-center text-blue-600 bg-transparent rounded cursor-pointer border-none
+    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10
+">
+  Small Link
+  <svg class="h-3 w-3 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"></path>
+  </svg>
+</a>
+<a class="
+    inline-flex flex-nowrap items-center py-2 text-base px-4
+    font-medium text-base text-center text-blue-600 bg-transparent rounded cursor-pointer border-none
+    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10
+">
+  Base Link
+  <svg class="h-4 w-4 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"></path>
+  </svg>
+</a>
+<a class="
+  inline-flex flex-nowrap items-center py-3 px-4 no-underline hover:focus:active:no-underline
+  font-medium text-lg text-center text-blue-600 bg-transparent rounded cursor-pointer border-none
+  hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10
+">
+  Large Link
+  <svg class="h-5 w-5 ml-1" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <path d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"></path>
+  </svg>
+</a>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-29"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>    inline-flex flex-nowrap items-center py-2 text-sm px-4<br>    font-medium text-sm text-center text-blue-600 bg-transparent rounded cursor-pointer border-none<br>    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300<br>    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10<br><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  Small Link<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-3 w-3 ml-1<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>    inline-flex flex-nowrap items-center py-2 text-base px-4<br>    font-medium text-base text-center text-blue-600 bg-transparent rounded cursor-pointer border-none<br>    no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300<br>    hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10<br><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  Base Link<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4 ml-1<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>a</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>  inline-flex flex-nowrap items-center py-3 px-4 no-underline hover:focus:active:no-underline<br>  font-medium text-lg text-center text-blue-600 bg-transparent rounded cursor-pointer border-none<br>  hover:text-blue-500 focus:active:text-blue-700 hover:bg-blue-100/10 focus:active:bg-blue-100/10<br><span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  Large Link<br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-5 w-5 ml-1<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span> <span class="token attr-name">aria-hidden</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>true<span class="token punctuation">"</span></span> <span class="token attr-name">xmlns</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>http://www.w3.org/2000/svg<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>a</span><span class="token punctuation">></span></span></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-29"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+
+          </article>
+        
+
+      </main>
+    </div>
+    <script>function showTooltip(e,o){e.trigger.className.includes("tooltipped")||(e.trigger.children[0].className="tooltipped tooltipped-s",e.trigger.children[0].ariaLabel=o)}window.addEventListener("load",()=>{var e=new ClipboardJS(".code-copy");e.on("success",e=>showTooltip(e,"Kopeeritud")),e.on("error",e=>showTooltip(e,"Kopeerimine ebaõnnestus"))});</script>
+<script async src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.js"></script>
+
+  </body>
+</html>
