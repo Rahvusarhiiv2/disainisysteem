@@ -1,0 +1,403 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Kontekstirada — Rahvusarhiivi disainisüsteem</title>
+
+    <link rel="stylesheet" href="../../../assets/css/style.css">
+    <link rel="stylesheet" href="../../../assets/css/themes/prism-ghcolors.css" />
+
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Primer/19.1.1/tooltips.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    
+    <link href="https://unpkg.com/prism-themes/themes/prism-one-light.css" rel="stylesheet">
+
+    <style>
+      .tooltipped::before {
+        color: #fcf !important;
+        border-bottom-color: #ffccff !important;
+      }
+
+      .tooltipped::after {
+        background-color: #fcf !important;
+        color: #303 !important;
+      }
+    </style>
+
+    
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.12.3/dist/cdn.min.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+
+    
+    <script>
+      function copy(el) {
+        navigator.clipboard.writeText(el.innerHTML);
+        el.nextElementSibling.textContent="Kopeeritud"
+        el.nextElementSibling.classList.remove("hidden");
+        setTimeout(function(){
+            el.nextElementSibling.classList.add("hidden");
+            el.nextElementSibling.textContent="Kopeeri"
+        }, 2000);
+      }
+    </script>
+
+  </head>
+  <body class="bg-gray-50">
+    <header class="m-2 bg-theme-ais rounded-sm shadow">
+  <div class="flex py-5 px-8 w-full items-center">
+
+    <img src="../../../assets/images/logo.svg" class="h-8" alt="Rahvusarhiiv">
+
+    <p class="border-l ml-4 pl-4 font-medium">
+      disainisüsteem
+    </p>
+
+    <div class="ml-auto space-x-3">
+      <!--<a href="#" class="font-bold underline">Link1</a>-->
+      <!--<a href="#" class="font-bold underline">Link2</a>-->
+    </div>
+  </div>
+
+</header>
+
+    <div class="grid lg:grid-cols-12 gap-2 m-2">
+      <aside class="md:col-span-3 p-4 bg-white rounded-sm shadow">
+  <nav class="divide-y-2 divide-gray-200 sticky top-4">
+
+    <section class="pb-3">
+      
+      <ul class="space-y-1">
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../">Sissejuhatus</a>
+          </li>
+          <li class="">
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../versioning/">Versioonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Toon, keel ja vorm</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../language/voice/">Pöördumine ja hääletoon</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../language/orthography/">Heakeelsus ja õigekeelsus</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../language/format/">Vormistus- ja vormindusvõtted</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Kasutajaliides ja -kogemus</h3>
+
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../design/shadows/">Varjude kasutamine</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/getting-started/">Seadistamine</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/border-radius/">Kumerused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/shadows/">Varjud</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/colors/">Värvid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/themes/">Teemad</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/spacing/">Astmik</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/font-face/">Kirjatüübid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/font-weight/">Kirjalaadid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/font-size/">Kirjasuurused</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../classes/typography/">Autotüpograafia</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../icons/logos/">Rakenduste logod</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../icons/generic/">Üldised ikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../icons/arrows/">Noolikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../../icons/special/">Spetsiaalsed ikoonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Elemendid</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/badges/">Sildid
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Navigeerimine</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/links/">Lingid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/sections/">Sektsioonid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/breadcrumbs/">Asukoharada
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Vorm</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/text-inputs/">Sisestuskastid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/selects/">Valikukastid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/checkboxes/">Märkeruudud
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/radios/">Raadionupud
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/buttons/">Nupud
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Tagasiside</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/alerts/">Hoiatused ja teated
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/empty-states/">Tühiolekud
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Näited</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../../components/examples/cookies/">Küpsised
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50  bg-green-50 "
+              href="../../../components/examples/context-crumbs/">Kontekstirada
+            </a>
+          </li>
+      </ul>
+    </section>
+
+  </nav>
+</aside>
+      <main class="lg:col-span-9 p-6 bg-white rounded-sm shadow">
+
+        
+          <article class="prose prose-lg max-w-5xl">
+            <h1>Asukoharajad</h1>
+<h3>Säiliku kontekstirada <span class="inline-flex items-center rounded bg-blue-50 p-2 text-sm font-medium text-blue-700"> kasutab JS </span></h3>
+<div class="not-prose font-body rounded border-2 border-gray-50 p-10 bg-gray-200">
+<div x-data="{ open: true }" class="flex items-center bg-gray-50 rounded text-sm">
+  <div class="flex items-start w-full">
+    <div class="p-1 bg-white rounded mr-5">
+      <button class="flex flex-nowrap
+            rounded p-3 font-medium cursor-pointer border-none
+            no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+            hover:bg-gray-100/60 focus:active:bg-gray-100/80
+          ">
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+        </svg>
+        Tagasi
+      </button>
+    </div>
+    <div class="flex grow self-center overflow-x-hidden">
+      <div id="short-path" :class="open ? '' : 'hidden'" class="flex items-center whitespace-nowrap p-1">
+        <button class="
+              inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-900 font-bold
+              bg-transparent rounded cursor-pointer border-none no-underline hover:focus:active:no-underline
+              focus:active:ring-2 focus:active:ring-green-300 hover:bg-white/60 focus:active:bg-white
+            ">
+          Arhiiv: ERA.5772 - Metsamajanduse Ökonoomika- ja Infokeskus
+        </button>
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+        </svg>
+        ...
+        <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+        </svg>
+        <p
+          class="inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-700 bg-transparent border-none no-underline">
+          Säilik: ERA.5772.1.2 Juhataja käskkirjad nr 1-6
+        </p>
+      </div>
+      <div id="long-path" :class="open ? 'hidden' : ''" class="flex flex-col">
+        <div class="py-1.5 border-b">
+          <button class="w-auto m-1
+              inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-900 font-bold
+              bg-transparent rounded cursor-pointer border-none no-underline hover:focus:active:no-underline
+              focus:active:ring-2 focus:active:ring-green-300 hover:bg-white/60 focus:active:bg-white
+            ">
+            Arhiiv: ERA.5772 - Metsamajanduse Ökonoomika- ja Infokeskus
+          </button>
+        </div>
+        <div class="flex whitespace-nowrap py-1.5">
+          <button class="w-auto m-1
+            inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-900 font-bold
+            bg-transparent rounded cursor-pointer border-none no-underline hover:focus:active:no-underline
+            focus:active:ring-2 focus:active:ring-green-300 hover:bg-white/60 focus:active:bg-white
+          ">
+            Sari: 2 - Juhataja põhitegevuse käskkirjad, käskkirjade register
+          </button>
+          <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/>
+          </svg>
+          <p
+            class="inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-700 bg-transparent border-none no-underline">
+            Säilik: ERA.5772.1.2 Juhataja käskkirjad nr 1-6
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="p-1">
+      <button :class="open ? '' : 'hidden'" @click="open = !open" class="
+        flex flex-nowrap rounded p-3 font-medium cursor-pointer border-none
+        no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+        hover:bg-gray-100/60 focus:active:bg-gray-100/80 max-sm:!hidden
+      ">
+        Ava
+        <svg class="h-4 w-4" viewBox="0 0 24 24">
+          <path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path>
+        </svg>
+      </button>
+      <button :class="open ? 'hidden' : ''" @click="open = !open" class="
+        flex flex-nowrap rounded p-3 font-medium cursor-pointer border-none
+        no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300
+        hover:bg-gray-100/60 focus:active:bg-gray-100/80 max-sm:!hidden
+      ">
+        Sulge
+        <svg class="h-4 w-4" viewBox="0 0 24 24">
+          <path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</div>
+</div>
+<details>
+      <summary class="cursor-pointer px-2 py-1.5 my-2 text-base text-gray-600 bg-gray-50 rounded-sm">HTML</summary>
+
+<div style="position: relative">
+  <pre class="language-html"><code id="code-9"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">x-data</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>{ open: true }<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center bg-gray-50 rounded text-sm<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-start w-full<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>p-1 bg-white rounded mr-5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex flex-nowrap<br>            rounded p-3 font-medium cursor-pointer border-none<br>            no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300<br>            hover:bg-gray-100/60 focus:active:bg-gray-100/80<br>          <span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>        Tagasi<br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex grow self-center overflow-x-hidden<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>short-path<span class="token punctuation">"</span></span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>open ? '' : 'hidden'<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex items-center whitespace-nowrap p-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>              inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-900 font-bold<br>              bg-transparent rounded cursor-pointer border-none no-underline hover:focus:active:no-underline<br>              focus:active:ring-2 focus:active:ring-green-300 hover:bg-white/60 focus:active:bg-white<br>            <span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          Arhiiv: ERA.5772 - Metsamajanduse Ökonoomika- ja Infokeskus<br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>        ...<br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><br>          <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-700 bg-transparent border-none no-underline<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          Säilik: ERA.5772.1.2 Juhataja käskkirjad nr 1-6<br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">id</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>long-path<span class="token punctuation">"</span></span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>open ? 'hidden' : ''<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex flex-col<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>py-1.5 border-b<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-auto m-1<br>              inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-900 font-bold<br>              bg-transparent rounded cursor-pointer border-none no-underline hover:focus:active:no-underline<br>              focus:active:ring-2 focus:active:ring-green-300 hover:bg-white/60 focus:active:bg-white<br>            <span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            Arhiiv: ERA.5772 - Metsamajanduse Ökonoomika- ja Infokeskus<br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>flex whitespace-nowrap py-1.5<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>w-auto m-1<br>            inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-900 font-bold<br>            bg-transparent rounded cursor-pointer border-none no-underline hover:focus:active:no-underline<br>            focus:active:ring-2 focus:active:ring-green-300 hover:bg-white/60 focus:active:bg-white<br>          <span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            Sari: 2 - Juhataja põhitegevuse käskkirjad, käskkirjade register<br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span> <span class="token attr-name">fill</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>currentColor<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z<span class="token punctuation">"</span></span><span class="token punctuation">/></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><br>            <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>inline-flex flex-nowrap items-center px-2 py-1.5 text-sm text-center text-gray-700 bg-transparent border-none no-underline<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>            Säilik: ERA.5772.1.2 Juhataja käskkirjad nr 1-6<br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>p-1<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>open ? '' : 'hidden'<span class="token punctuation">"</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>open = !open<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>        flex flex-nowrap rounded p-3 font-medium cursor-pointer border-none<br>        no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300<br>        hover:bg-gray-100/60 focus:active:bg-gray-100/80 max-sm:!hidden<br>      <span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        Ava<br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">:class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>open ? 'hidden' : ''<span class="token punctuation">"</span></span> <span class="token attr-name">@click</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>open = !open<span class="token punctuation">"</span></span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span><br>        flex flex-nowrap rounded p-3 font-medium cursor-pointer border-none<br>        no-underline hover:focus:active:no-underline focus:active:ring-2 focus:active:ring-green-300<br>        hover:bg-gray-100/60 focus:active:bg-gray-100/80 max-sm:!hidden<br>      <span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>        Sulge<br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>svg</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>h-4 w-4<span class="token punctuation">"</span></span> <span class="token attr-name">viewBox</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>0 0 24 24<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><br>          <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>path</span> <span class="token attr-name">d</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>path</span><span class="token punctuation">></span></span><br>        <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>svg</span><span class="token punctuation">></span></span><br>      <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span><br>    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br>  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br></code></pre>
+
+  <button class="code-copy "
+    data-clipboard-target="#code-9"
+    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
+    <span>
+      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
+    </span>
+  </button>
+</div>
+</details>
+
+          </article>
+        
+
+      </main>
+    </div>
+    <script>function showTooltip(e,o){e.trigger.className.includes("tooltipped")||(e.trigger.children[0].className="tooltipped tooltipped-s",e.trigger.children[0].ariaLabel=o)}window.addEventListener("load",()=>{var e=new ClipboardJS(".code-copy");e.on("success",e=>showTooltip(e,"Kopeeritud")),e.on("error",e=>showTooltip(e,"Kopeerimine ebaõnnestus"))});</script>
+<script async src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.js"></script>
+
+  </body>
+</html>

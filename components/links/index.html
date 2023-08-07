@@ -34,6 +34,12 @@
     </style>
 
     
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.12.3/dist/cdn.min.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+
+    
     <script>
       function copy(el) {
         navigator.clipboard.writeText(el.innerHTML);
@@ -110,19 +116,6 @@
     </section>
 
     <section class="py-3">
-      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
-      
-      <ul class="space-y-1">
-          <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
-          </li>
-          <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
-          </li>
-      </ul>
-    </section>
-
-    <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
       
       <ul class="space-y-1">
@@ -160,7 +153,37 @@
     </section>
 
     <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/logos/">Rakenduste logod</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/arrows/">Noolikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Elemendid</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/badges/">Sildid
+            </a>
+          </li>
+      </ul>
 
       <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Navigeerimine</h3>
       
@@ -169,6 +192,18 @@
             <a
               class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50  bg-green-50 "
               href="../../components/links/">Lingid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/sections/">Sektsioonid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/breadcrumbs/">Asukoharada
             </a>
           </li>
       </ul>
@@ -221,6 +256,23 @@
             <a
               class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
               href="../../components/empty-states/">Tühiolekud
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Näited</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/examples/cookies/">Küpsised
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/examples/breadcrumbs/">Asukoharada
             </a>
           </li>
       </ul>

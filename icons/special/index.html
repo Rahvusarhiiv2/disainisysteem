@@ -34,6 +34,12 @@
     </style>
 
     
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/persist@3.12.3/dist/cdn.min.js"></script>
+    
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.12.3/dist/cdn.min.js"></script>
+
+    
     <script>
       function copy(el) {
         navigator.clipboard.writeText(el.innerHTML);
@@ -110,19 +116,6 @@
     </section>
 
     <section class="py-3">
-      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
-      
-      <ul class="space-y-1">
-          <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
-          </li>
-          <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50  bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
-          </li>
-      </ul>
-    </section>
-
-    <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Klassid ja omadused</h3>
       
       <ul class="space-y-1">
@@ -160,7 +153,37 @@
     </section>
 
     <section class="py-3">
+      <h3 class="px-4 py-2 uppercase font-bold text-sm">Ikoonid ja logod</h3>
+      
+      <ul class="space-y-1">
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/logos/">Rakenduste logod</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/arrows/">Noolikoonid</a>
+          </li>
+          <li>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50  bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
+          </li>
+      </ul>
+    </section>
+
+    <section class="py-3">
       <h3 class="px-4 py-2 uppercase font-bold text-sm">Komponendid ja küljendid</h3>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Elemendid</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/badges/">Sildid
+            </a>
+          </li>
+      </ul>
 
       <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Navigeerimine</h3>
       
@@ -169,6 +192,18 @@
             <a
               class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
               href="../../components/links/">Lingid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/sections/">Sektsioonid
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/breadcrumbs/">Asukoharada
             </a>
           </li>
       </ul>
@@ -221,6 +256,23 @@
             <a
               class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
               href="../../components/empty-states/">Tühiolekud
+            </a>
+          </li>
+      </ul>
+
+      <h3 class="px-4 py-2 uppercase text-sm border-b border-dashed">Näited</h3>
+      
+      <ul class="mb-4 space-y-0.5">
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/examples/cookies/">Küpsised
+            </a>
+          </li>
+          <li>
+            <a
+              class="block rounded-sm py-2 pl-6 pr-4 hover:bg-green-50 "
+              href="../../components/examples/breadcrumbs/">Asukoharada
             </a>
           </li>
       </ul>
@@ -327,7 +379,7 @@
         </div>
       </div>
       <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">allfunktsioon</div>
-    </div> 
+    </div>
 <div>
       <div class="relative group h-[8.5rem]">
         <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
@@ -353,7 +405,7 @@
         </div>
       </div>
       <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">allsari</div>
-    </div> 
+    </div>
 <div>
       <div class="relative group h-[8.5rem]">
         <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
@@ -418,6 +470,19 @@
         </div>
       </div>
       <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">telli</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M21 18V16H8V18H21ZM4.4 17L9.4 12L4.4 7L3 8.4L6.6 12L3 15.6L4.4 17ZM21 13V11H11V13H21ZM21 8V6H8V8H21Z" fill="#323232"/>
+</svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">ava arhiivipuu</div>
     </div>
 <div>
       <div class="relative group h-[8.5rem]">

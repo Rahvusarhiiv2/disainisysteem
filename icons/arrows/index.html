@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Kirjatüübid — Rahvusarhiivi disainisüsteem</title>
+    <title>Noolikoonid — Rahvusarhiivi disainisüsteem</title>
 
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/themes/prism-ghcolors.css" />
@@ -138,7 +138,7 @@
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/spacing/">Astmik</a>
           </li>
           <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50  bg-green-50 " href="../../classes/font-face/">Kirjatüübid</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-face/">Kirjatüübid</a>
           </li>
           <li>
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../classes/font-weight/">Kirjalaadid</a>
@@ -163,7 +163,7 @@
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/generic/">Üldised ikoonid</a>
           </li>
           <li>
-            <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/arrows/">Noolikoonid</a>
+            <a class="block rounded-sm py-2 px-4 hover:bg-green-50  bg-green-50 " href="../../icons/arrows/">Noolikoonid</a>
           </li>
           <li>
             <a class="block rounded-sm py-2 px-4 hover:bg-green-50 " href="../../icons/special/">Spetsiaalsed ikoonid</a>
@@ -284,72 +284,159 @@
 
         
           <article class="prose prose-lg max-w-5xl">
-            <h1>Kirjatüübid</h1>
-<p class="-mt-8 text-gray-300">Rahvusarhiivi rakendustes tohib kasutada ainult järgmisi kirjatüüpe</p>
-<table>
-<thead>
-<tr>
-<th>Klass</th>
-<th>Kirjatüüp</th>
-<th>Soovitus</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>font-body</td>
-<td>Roboto</td>
-<td>vaikimisi kõikjal, kus pole määratud teist kirjatüüpi</td>
-</tr>
-<tr>
-<td>font-heading</td>
-<td>Raleway</td>
-<td>pealkirjade jaoks</td>
-</tr>
-<tr>
-<td>font-mono</td>
-<td>Monospace</td>
-<td>programmikoodi jaoks</td>
-</tr>
-</tbody>
-</table>
-<div class="bg-gray-50 rounded p-4 mb-8">
-  <div class="border-b flex space-x-6 pb-4">
-    <code class="text-sm select-all">font-body</code>
-    <span class="text-sm font-mono text-gray-300">Roboto</span>
-  </div>
-  <p class="font-body">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  </p>
-</div>
-<div class="bg-gray-50 rounded p-4 mb-8">
-  <div class="border-b flex space-x-6 pb-4">
-    <code class="text-sm select-all">font-heading</code>
-    <span class="text-sm font-mono text-gray-300">Raleway</span>
-  </div>
-  <p class="font-heading text-xl">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  </p>
-</div>
-<div class="bg-gray-50 rounded p-4 mb-8">
-  <div class="border-b flex space-x-6 pb-4">
-    <code class="text-sm select-all">font-mono</code>
-    <span class="text-sm font-mono text-gray-300">Monospace</span>
-  </div>
-  <p class="font-mono">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-  </p>
-</div>
-
-<div style="position: relative">
-  <pre class="language-html"><code id="code-57"class="language-html"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-body ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-heading ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span><br><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation attr-equals">=</span><span class="token punctuation">"</span>font-mono ...<span class="token punctuation">"</span></span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span></code></pre>
-
-  <button class="code-copy "
-    data-clipboard-target="#code-57"
-    style="position: absolute; top: 5px; right: 10px; cursor: pointer; outline: none; opacity: 0.5" title="Kopeeri">
-    <span>
-      <span style="font-size: 18px; opacity: 0.5;" class="mdi mdi-content-copy"></span>
-    </span>
-  </button>
+            <h1>Noolikoonid</h1>
+<p class="-mt-8 text-gray-300">
+  Noolikoonid on üldised ikoonid, millega ei pea alati tähistama ühte kindlat tegevust, vaid mille tähendus võib sõltuda kontekstist
+</p>
+<div class="grid grid-cols-[repeat(auto-fill,minmax(8rem,1fr))] gap-x-6 gap-y-8 pt-6">
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M4 12L5.41 13.41L11 7.83V20H13V7.83L18.58 13.42L20 12L12 4L4 12Z" fill="#323232"/>
+</svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">pikk üles</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M20 12L18.59 10.59L13 16.17V4H11V16.17L5.42 10.58L4 12L12 20L20 12Z" fill="#323232"/>
+</svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">pikk alla</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/></svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">lühike vasakule</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"/></svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">lühike paremale</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 15.41 12 10.83l4.59 4.58L18 14l-6-6-6 6 1.41 1.41z"/></svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">lühike üles</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor"><path d="M7.41 8.59 12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"/></svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">lühike alla</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+  <g><g><polygon points="17.59,18 19,16.59 14.42,12 19,7.41 17.59,6 11.59,12"/><polygon points="11,18 12.41,16.59 7.83,12 12.41,7.41 11,6 5,12"/></g></g>
+</svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">topelt vasakule</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+  <g><g><polygon points="6.41,6 5,7.41 9.58,12 5,16.59 6.41,18 12.41,12"/><polygon points="13,6 11.59,7.41 16.17,12 11.59,16.59 13,18 19,12"/></g></g>
+</svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">topelt paremale</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+  <g><g><polygon points="6,17.59 7.41,19 12,14.42 16.59,19 18,17.59 12,11.59"/><polygon points="6,11 7.41,12.41 12,7.83 16.59,12.41 18,11 12,5"/></g></g>
+</svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">topelt üles</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg class="h-6 w-6" viewBox="0 0 24 24" fill="currentColor">
+  <g><g><polygon points="18,6.41 16.59,5 12,9.58 7.41,5 6,6.41 12,12.41"/><polygon points="18,13 16.59,11.59 12,16.17 7.41,11.59 6,13 12,19"/></g></g>
+</svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">topelt alla</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M12 5.83L15.17 9L16.58 7.59L12 3L7.40997 7.59L8.82997 9L12 5.83ZM12 18.17L8.82997 15L7.41997 16.41L12 21L16.59 16.41L15.17 15L12 18.17Z" fill="#323232"/>
+</svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">vertikaalselt lahku</div>
+    </div>
+<div>
+      <div class="relative group h-[8.5rem]">
+        <button type="button" onclick="copy(this)" class="absolute z-10 cursor-pointer inset-0 flex h-full w-full items-center justify-center rounded border border-gray-100">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M7.40997 18.59L8.82997 20L12 16.83L15.17 20L16.58 18.59L12 14L7.40997 18.59ZM16.59 5.41L15.17 4L12 7.17L8.82997 4L7.40997 5.41L12 10L16.59 5.41Z" fill="#323232"/>
+</svg>
+</button>
+        <div class="absolute z-0 hidden pt-4 w-full text-center text-[0.8125rem] text-gray-200 group-hover:block">
+          Kopeeri
+        </div>
+      </div>
+      <div class="mt-3 truncate text-center text-[0.8125rem] leading-6 text-gray-500">vertikaalselt kokku</div>
+    </div>
 </div>
 
           </article>
