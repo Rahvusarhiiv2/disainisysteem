@@ -1504,10 +1504,6 @@ body {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .inset-0 {
   top: 0px;
   right: 0px;
@@ -1518,10 +1514,6 @@ body {
 .inset-y-0 {
   top: 0px;
   bottom: 0px;
-}
-
-.top-4 {
-  top: 1rem;
 }
 
 .bottom-0 {
@@ -1824,6 +1816,10 @@ body {
   height: 1.5rem;
 }
 
+.h-9 {
+  height: 2.25rem;
+}
+
 .h-8 {
   height: 2rem;
 }
@@ -1880,8 +1876,28 @@ body {
   width: 16rem;
 }
 
+.w-10 {
+  width: 2.5rem;
+}
+
+.w-20 {
+  width: 5rem;
+}
+
+.w-16 {
+  width: 4rem;
+}
+
+.w-14 {
+  width: 3.5rem;
+}
+
 .w-6 {
   width: 1.5rem;
+}
+
+.w-9 {
+  width: 2.25rem;
 }
 
 .w-4 {
@@ -1890,10 +1906,6 @@ body {
 
 .w-auto {
   width: auto;
-}
-
-.w-10 {
-  width: 2.5rem;
 }
 
 .w-3 {
@@ -2210,7 +2222,7 @@ body {
 
 .border-green-400 {
   --tw-border-opacity: 1;
-  border-color: rgb(89 194 126 / var(--tw-border-opacity));
+  border-color: rgb(97 183 126 / var(--tw-border-opacity));
 }
 
 .border-yellow-400 {
@@ -2253,7 +2265,7 @@ body {
 }
 
 .bg-green-50\/50 {
-  background-color: rgb(228 251 237 / 0.5);
+  background-color: rgb(233 247 238 / 0.5);
 }
 
 .bg-yellow-50\/50 {
@@ -2305,7 +2317,7 @@ body {
 
 .bg-green-50 {
   --tw-bg-opacity: 1;
-  background-color: rgb(228 251 237 / var(--tw-bg-opacity));
+  background-color: rgb(233 247 238 / var(--tw-bg-opacity));
 }
 
 .bg-red-50 {
@@ -2330,7 +2342,7 @@ body {
 
 .bg-green-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(123 201 148 / var(--tw-bg-opacity));
+  background-color: rgb(131 199 154 / var(--tw-bg-opacity));
 }
 
 .bg-blue-300 {
@@ -2657,7 +2669,7 @@ body {
 
 .text-green-400 {
   --tw-text-opacity: 1;
-  color: rgb(89 194 126 / var(--tw-text-opacity));
+  color: rgb(97 183 126 / var(--tw-text-opacity));
 }
 
 .text-yellow-400 {
@@ -2863,7 +2875,7 @@ body {
 
 .hover\:bg-green-50:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(228 251 237 / var(--tw-bg-opacity));
+  background-color: rgb(233 247 238 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-gray-100\/60:hover {
@@ -2957,7 +2969,7 @@ body {
 
 .focus\:ring-green-300:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(123 201 148 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(131 199 154 / var(--tw-ring-opacity));
 }
 
 .focus\:ring-red-200:focus {
@@ -2974,7 +2986,7 @@ body {
 }
 
 .focus\:ring-offset-green-50:focus {
-  --tw-ring-offset-color: #E4FBED;
+  --tw-ring-offset-color: #E9F7EE;
 }
 
 .focus\:active\:border-gray-900:active:focus {
@@ -3023,7 +3035,7 @@ body {
 
 .focus\:active\:ring-green-300:active:focus {
   --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(123 201 148 / var(--tw-ring-opacity));
+  --tw-ring-color: rgb(131 199 154 / var(--tw-ring-opacity));
 }
 
 .hover\:focus\:active\:underline:active:focus:hover {
