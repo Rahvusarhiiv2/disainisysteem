@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 8
 ---
 
-## Kirjalaadid
+# Kirjalaadid
 
 <p class="-mt-8 text-gray-300">Kirjatüüpidele saab määrata järgmised kirjalaadid</p>
 
