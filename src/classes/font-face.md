@@ -15,8 +15,8 @@ eleventyNavigation:
 Klass | Kirjatüüp | Kaal | Soovitus  
 -- | -- | -- | --
 font-body | Roboto | 400 | vaikimisi kõikjal, kus pole määratud teist kirjatüüpi
-font-heading | Sora Semibold | 600 | pealkirjade jaoks
-font-display | Sora Semibold | 600 | suuremate pealkirjade ja esiletõstetud teksti jaoks
+font-heading | Sora | 600 | pealkirjade jaoks
+font-display | Sora | 600 | suuremate pealkirjade ja esiletõstetud teksti jaoks
 font-mono | Monospace | — | programmikoodi jaoks
 
 <div class="bg-gray-50 rounded p-4 mb-8">
@@ -32,7 +32,7 @@ font-mono | Monospace | — | programmikoodi jaoks
 <div class="bg-gray-50 rounded p-4 mb-8">
   <div class="border-b flex space-x-6 pb-4">
     <code class="text-sm select-all">font-heading</code>
-    <span class="text-sm font-mono text-gray-300">Sora Semibold</span>
+    <span class="text-sm font-mono text-gray-300">Sora</span>
   </div>
   <p class="font-heading text-xl">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -42,7 +42,7 @@ font-mono | Monospace | — | programmikoodi jaoks
 <div class="bg-gray-50 rounded p-4 mb-8">
   <div class="border-b flex space-x-6 pb-4">
     <code class="text-sm select-all">font-display</code>
-    <span class="text-sm font-mono text-gray-300">Sora Semibold</span>
+    <span class="text-sm font-mono text-gray-300">Sora</span>
   </div>
   <p class="font-display text-2xl">
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.

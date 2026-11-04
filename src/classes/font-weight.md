@@ -19,7 +19,7 @@ font-medium| Roboto 500
 font-bold | Roboto 700
 font-normal italic | Roboto 400 kursiiv
 font-bold italic | Roboto 700 kursiiv 
-font-display-semibold | Sora Semibold 600
+font-display-semibold | Sora 600
 
 <div class="bg-gray-50 rounded p-4 mb-8">
   <div class="border-b flex space-x-6 pb-4">

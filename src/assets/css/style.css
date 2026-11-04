@@ -7,6 +7,7 @@ body {
   font-family: theme("fontFamily.body");
 }
 
+.font-heading,
 .font-display {
   @apply font-semibold;
 }
